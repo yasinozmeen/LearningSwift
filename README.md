@@ -1,6 +1,6 @@
 # 💡 LearningSwift
 ## Swift öğrenirken yaptığım egzersiz projeleri
-> Her egzersizde birde onu anlattığım bir ReadMe dosyası onlarında içinde ss yada gid bulunuyor oralara bakarak hızlı bakış atabiliriniz..
+> Her egzersizde birde onu anlattığım bir ReadMe dosyası onlarında içinde ss yada gif bulunuyor oralara bakarak hızlı bakış atabiliriniz..
 
 
 ## 🗄 İçerik
