@@ -22,37 +22,91 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufR-wM-b8G">
-                                <rect key="frame" x="30" y="158" width="67" height="31"/>
+                                <rect key="frame" x="30" y="158" width="47" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yaz"/>
+                                <connections>
+                                    <action selector="yaz:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uoo-mt-dma"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90M-KH-a0v">
-                                <rect key="frame" x="317" y="158" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90M-KH-a0v">
+                                <rect key="frame" x="344.5" y="158" width="39.5" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sil"/>
+                                <connections>
+                                    <action selector="sil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDB-py-ZNh"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6J9-49-AsF">
-                                <rect key="frame" x="174" y="158" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6J9-49-AsF">
+                                <rect key="frame" x="182" y="158" width="50.5" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Oku"/>
+                                <connections>
+                                    <action selector="oku:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dWu-OG-qrj"/>
+                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chl-co-ZgE">
+                                <rect key="frame" x="30" y="209" width="112" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resmi Kaydet"/>
+                                <connections>
+                                    <action selector="resmiKaydet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EV4-eu-Gjw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTe-UH-XCg">
+                                <rect key="frame" x="300" y="209" width="83" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resmi Sil"/>
+                                <connections>
+                                    <action selector="resmiSil:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tAI-Uv-ZUz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRz-YF-32Y">
+                                <rect key="frame" x="151.5" y="209" width="111" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Resmi Göster"/>
+                                <connections>
+                                    <action selector="resmiGöster:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YCf-69-HEP"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="69O-fn-1Xv">
+                                <rect key="frame" x="20" y="260" width="363" height="602"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="602" id="kRe-Hs-kYV"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6J9-49-AsF" firstAttribute="top" secondItem="iVg-RV-zhd" secondAttribute="bottom" constant="30" id="6bR-JZ-iRr"/>
+                            <constraint firstItem="iTe-UH-XCg" firstAttribute="top" secondItem="90M-KH-a0v" secondAttribute="bottom" constant="20" id="6dS-rL-ddT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="90M-KH-a0v" secondAttribute="trailing" constant="30" id="6ji-Hf-QKw"/>
+                            <constraint firstItem="90M-KH-a0v" firstAttribute="top" secondItem="iVg-RV-zhd" secondAttribute="bottom" constant="30" id="9az-6U-HQQ"/>
                             <constraint firstItem="ufR-wM-b8G" firstAttribute="top" secondItem="iVg-RV-zhd" secondAttribute="bottom" constant="30" id="CSe-Br-GrO"/>
                             <constraint firstItem="iVg-RV-zhd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="DTh-OA-y49"/>
+                            <constraint firstItem="chl-co-ZgE" firstAttribute="top" secondItem="ufR-wM-b8G" secondAttribute="bottom" constant="20" id="Flt-3b-7cB"/>
+                            <constraint firstItem="69O-fn-1Xv" firstAttribute="trailing" secondItem="iTe-UH-XCg" secondAttribute="trailing" id="V5D-yb-q7l"/>
+                            <constraint firstItem="69O-fn-1Xv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="YEM-bT-bdt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iVg-RV-zhd" secondAttribute="trailing" constant="30" id="ZnT-K0-BDI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iTe-UH-XCg" secondAttribute="trailing" constant="31" id="b66-Y2-Fdj"/>
+                            <constraint firstItem="fRz-YF-32Y" firstAttribute="top" secondItem="6J9-49-AsF" secondAttribute="bottom" constant="20" id="ghw-hC-AUK"/>
+                            <constraint firstItem="chl-co-ZgE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="gw0-ry-CQF"/>
+                            <constraint firstItem="69O-fn-1Xv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="ko1-w9-pFA"/>
+                            <constraint firstItem="6J9-49-AsF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rDc-67-V2g"/>
+                            <constraint firstItem="fRz-YF-32Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="unR-ee-2x2"/>
                             <constraint firstItem="ufR-wM-b8G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="xAo-wO-plO"/>
                             <constraint firstItem="iVg-RV-zhd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="yGA-0i-Jps"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resimTutucu" destination="69O-fn-1Xv" id="Kgd-FE-Lw0"/>
+                        <outlet property="textField" destination="iVg-RV-zhd" id="SNy-np-cyo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="96"/>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
         </scene>
     </scenes>
     <resources>
