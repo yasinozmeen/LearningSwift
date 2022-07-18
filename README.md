@@ -9,3 +9,4 @@
 + [SearchBarFildering](https://github.com/yasinozmeen/LearningSwift/tree/main/41.Uygulama-SearchBarANDTableView) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/41.Uygulama-SearchBarANDTableView/41readME.md)
 + [UserDefault-LoginScreen](https://github.com/yasinozmeen/LearningSwift/tree/main/43.Uygulama-LoginEkraniUserDefault) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/43.Uygulama-LoginEkraniUserDefault/43readMe.md)
 + [FileManager](https://github.com/yasinozmeen/LearningSwift/tree/main/44.Uygulama-FileIslemleri) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/44.Uygulama-FileIslemleri/44ReadMe.md)
++ [CoreData-KisilerUygulaması](https://github.com/yasinozmeen/LearningSwift/tree/main/45.Uygulama-CoreDataKisilerUygulaması) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/45.Uygulama-CoreDataKisilerUygulaması/45ReadMe.md)
