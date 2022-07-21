@@ -1,17 +1,32 @@
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet var anaSayfaLabel: UILabel!
-    @IBOutlet var textField1: UITextField!
-    @IBOutlet var textField2: UITextField!
+    
+    @IBOutlet var searchBar: UISearchBar!
+    @IBOutlet var filmlerTableView: UITableView!
+    var filmler = ["batman","başlangıç","shrek","arabalar","liyligül","mercedes","korku seansı"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    }
-    @IBAction func button(_ sender: Any) {
+     
+        filmlerTableView.delegate = self
+        filmlerTableView.dataSource = self
     }
     
-
+    
+    
+    
 }
 
+extension ViewController:UITableViewDelegate,UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.filmler.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "filmHucre") as! filmHucreTableViewCell
+        
+        cell.filmAdiLAbel.text = filmler[indexPath.row]
+        return cell
+    }
+    
+}

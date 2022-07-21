@@ -13,8 +13,10 @@
 		843B093C28886A87001BFAD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843B093A28886A87001BFAD1 /* Main.storyboard */; };
 		843B093E28886A89001BFAD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843B093D28886A89001BFAD1 /* Assets.xcassets */; };
 		843B094128886A89001BFAD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843B093F28886A89001BFAD1 /* LaunchScreen.storyboard */; };
-		843B094928886CF6001BFAD1 /* DetayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843B094828886CF6001BFAD1 /* DetayVC.swift */; };
-		84EAFFE228886E8000DF221F /* KisiEkleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAFFE128886E8000DF221F /* KisiEkleViewController.swift */; };
+		84EAFFE728893B7900DF221F /* Filmler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84EAFFE528893B7900DF221F /* Filmler.xcdatamodeld */; };
+		84EAFFE928893C2A00DF221F /* filmHucreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAFFE828893C2A00DF221F /* filmHucreTableViewCell.swift */; };
+		84EAFFEB28893F4500DF221F /* filmEkleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAFFEA28893F4500DF221F /* filmEkleViewController.swift */; };
+		84EAFFED2889404800DF221F /* filmDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAFFEC2889404800DF221F /* filmDetayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +28,10 @@
 		843B093D28886A89001BFAD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843B094028886A89001BFAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843B094228886A89001BFAD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		843B094828886CF6001BFAD1 /* DetayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetayVC.swift; sourceTree = "<group>"; };
-		84EAFFE128886E8000DF221F /* KisiEkleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisiEkleViewController.swift; sourceTree = "<group>"; };
+		84EAFFE628893B7900DF221F /* Filmler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Filmler.xcdatamodel; sourceTree = "<group>"; };
+		84EAFFE828893C2A00DF221F /* filmHucreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filmHucreTableViewCell.swift; sourceTree = "<group>"; };
+		84EAFFEA28893F4500DF221F /* filmEkleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filmEkleViewController.swift; sourceTree = "<group>"; };
+		84EAFFEC2889404800DF221F /* filmDetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filmDetayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +64,35 @@
 		843B093328886A87001BFAD1 /* CoreDataEgzersiz */ = {
 			isa = PBXGroup;
 			children = (
-				843B093428886A87001BFAD1 /* AppDelegate.swift */,
-				843B093628886A87001BFAD1 /* SceneDelegate.swift */,
-				843B093828886A87001BFAD1 /* ViewController.swift */,
+				84EAFFF1288940AC00DF221F /* Ekstra */,
+				84EAFFEF2889408000DF221F /* VC */,
 				843B093A28886A87001BFAD1 /* Main.storyboard */,
-				84EAFFE128886E8000DF221F /* KisiEkleViewController.swift */,
-				843B094828886CF6001BFAD1 /* DetayVC.swift */,
-				843B093D28886A89001BFAD1 /* Assets.xcassets */,
 				843B093F28886A89001BFAD1 /* LaunchScreen.storyboard */,
+				843B093D28886A89001BFAD1 /* Assets.xcassets */,
 				843B094228886A89001BFAD1 /* Info.plist */,
+				84EAFFE528893B7900DF221F /* Filmler.xcdatamodeld */,
 			);
 			path = CoreDataEgzersiz;
+			sourceTree = "<group>";
+		};
+		84EAFFEF2889408000DF221F /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				843B093828886A87001BFAD1 /* ViewController.swift */,
+				84EAFFE828893C2A00DF221F /* filmHucreTableViewCell.swift */,
+				84EAFFEC2889404800DF221F /* filmDetayViewController.swift */,
+				84EAFFEA28893F4500DF221F /* filmEkleViewController.swift */,
+			);
+			name = VC;
+			sourceTree = "<group>";
+		};
+		84EAFFF1288940AC00DF221F /* Ekstra */ = {
+			isa = PBXGroup;
+			children = (
+				843B093428886A87001BFAD1 /* AppDelegate.swift */,
+				843B093628886A87001BFAD1 /* SceneDelegate.swift */,
+			);
+			name = Ekstra;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,11 +166,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843B094928886CF6001BFAD1 /* DetayVC.swift in Sources */,
+				84EAFFE928893C2A00DF221F /* filmHucreTableViewCell.swift in Sources */,
 				843B093928886A87001BFAD1 /* ViewController.swift in Sources */,
 				843B093528886A87001BFAD1 /* AppDelegate.swift in Sources */,
+				84EAFFEB28893F4500DF221F /* filmEkleViewController.swift in Sources */,
+				84EAFFED2889404800DF221F /* filmDetayViewController.swift in Sources */,
 				843B093728886A87001BFAD1 /* SceneDelegate.swift in Sources */,
-				84EAFFE228886E8000DF221F /* KisiEkleViewController.swift in Sources */,
+				84EAFFE728893B7900DF221F /* Filmler.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +390,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		84EAFFE528893B7900DF221F /* Filmler.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				84EAFFE628893B7900DF221F /* Filmler.xcdatamodel */,
+			);
+			currentVersion = 84EAFFE628893B7900DF221F /* Filmler.xcdatamodel */;
+			path = Filmler.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 843B092928886A87001BFAD1 /* Project object */;
 }
