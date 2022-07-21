@@ -3,8 +3,10 @@
     <entity name="Filmler" representedClassName="Filmler" syncable="YES" codeGenerationType="class">
         <attribute name="film_ad" optional="YES" attributeType="String"/>
         <attribute name="film_tur" optional="YES" attributeType="String"/>
+        <attribute name="link" optional="YES" attributeType="String"/>
+        <attribute name="yonetmen" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Filmler" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="Filmler" positionX="-63" positionY="-18" width="128" height="89"/>
     </elements>
 </model>

@@ -11,7 +11,7 @@
         <!--Filmler-->
         <scene sceneID="k6h-Dp-qxv">
             <objects>
-                <viewController id="r5A-fX-UjB" customClass="ViewController" customModule="CoreDataEgzersiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="anasayfa" id="r5A-fX-UjB" customClass="ViewController" customModule="CoreDataEgzersiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3AR-RX-aJJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,21 +20,24 @@
                                 <rect key="frame" x="0.0" y="139" width="414" height="723"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="filmHucre" id="u2z-mK-Xfc" customClass="filmHucreTableViewCell" customModule="CoreDataEgzersiz" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="filmHucre" rowHeight="90" id="u2z-mK-Xfc" customClass="filmHucreTableViewCell" customModule="CoreDataEgzersiz" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u2z-mK-Xfc" id="u1G-tQ-sDa">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Batman" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUx-q7-o7t">
-                                                    <rect key="frame" x="40" y="7" width="136" height="29.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Batman" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUx-q7-o7t">
+                                                    <rect key="frame" x="40" y="30.5" width="260" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="260" id="bpZ-cz-BIt"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbB-vf-G4L">
-                                                    <rect key="frame" x="311" y="3" width="83" height="38"/>
+                                                    <rect key="frame" x="311" y="26" width="83" height="38"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Göster">
                                                         <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
@@ -56,6 +59,7 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <sections/>
                             </tableView>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="bLs-Mv-gRp">
                                 <rect key="frame" x="0.0" y="88" width="414" height="51"/>
@@ -74,23 +78,22 @@
                             <constraint firstItem="s2i-J5-CMb" firstAttribute="trailing" secondItem="dV9-Nd-ox6" secondAttribute="trailing" id="x22-KX-jYO"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Filmler" id="Ypa-UT-x90">
-                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="lVg-QA-mlp"/>
+                    <navigationItem key="navigationItem" title="Filmler" largeTitleDisplayMode="always" id="Ypa-UT-x90">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="dPT-z5-edU">
                             <connections>
-                                <segue destination="Vez-md-C50" kind="show" id="fFr-kR-y9l"/>
+                                <segue destination="Vez-md-C50" kind="show" identifier="" id="DIM-2r-bv7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="filmlerTableView" destination="dV9-Nd-ox6" id="BJX-RH-mDp"/>
                         <outlet property="searchBar" destination="bLs-Mv-gRp" id="GCt-PN-ond"/>
-                        <segue destination="h3J-bO-hZ3" kind="show" id="akm-Br-JKl"/>
+                        <segue destination="h3J-bO-hZ3" kind="show" identifier="toDetay" id="akm-Br-JKl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nb8-dc-jK1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1694" y="291"/>
+            <point key="canvasLocation" x="1692.753623188406" y="290.625"/>
         </scene>
         <!--Film Ekle-->
         <scene sceneID="T8V-fr-Sqp">
@@ -101,29 +104,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Film Adı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ocg-w8-xon">
-                                <rect key="frame" x="20" y="148" width="374" height="34"/>
+                                <rect key="frame" x="20" y="200" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Türü" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VzQ-kV-0H6">
-                                <rect key="frame" x="20" y="212" width="374" height="34"/>
+                                <rect key="frame" x="20" y="264" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder=" Bilgi Linki" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cLx-og-JQ1">
-                                <rect key="frame" x="20" y="340" width="374" height="34"/>
+                                <rect key="frame" x="20" y="392" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aok-yW-ysA">
-                                <rect key="frame" x="150" y="399" width="114" height="39.5"/>
+                                <rect key="frame" x="150" y="451" width="114" height="39.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Ekle">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="ekleButton:" destination="Vez-md-C50" eventType="touchUpInside" id="juN-b9-bUZ"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Yönetmen" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yXL-D9-XfA">
-                                <rect key="frame" x="20" y="276" width="374" height="34"/>
+                                <rect key="frame" x="20" y="328" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -149,6 +155,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Film Ekle" id="mg2-hC-gXT"/>
+                    <connections>
+                        <outlet property="filmAdiTextField" destination="Ocg-w8-xon" id="ecy-5P-izD"/>
+                        <outlet property="filmTuruTextField" destination="VzQ-kV-0H6" id="1Lk-bs-H9D"/>
+                        <outlet property="linkTextField" destination="cLx-og-JQ1" id="CFF-BA-Q1C"/>
+                        <outlet property="yonetmenTextField" destination="yXL-D9-XfA" id="ugs-g3-WGW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qgo-Zo-RaN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -163,25 +175,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Film Adı" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wT-RD-9mn">
-                                <rect key="frame" x="20" y="188" width="374" height="30"/>
+                                <rect key="frame" x="20" y="98" width="374" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Film türü" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GdC-uM-NkU">
-                                <rect key="frame" x="20" y="243" width="374" height="30"/>
+                                <rect key="frame" x="20" y="153" width="374" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yönetmen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSO-OY-VdS">
-                                <rect key="frame" x="20" y="298" width="374" height="30"/>
+                                <rect key="frame" x="20" y="208" width="374" height="30"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ree-e0-e5E">
-                                <rect key="frame" x="20" y="358" width="374" height="484"/>
+                                <rect key="frame" x="20" y="268" width="374" height="574"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -195,7 +207,7 @@
                             <constraint firstItem="YSO-OY-VdS" firstAttribute="leading" secondItem="KpR-Ef-SX9" secondAttribute="leading" constant="20" id="6nf-KH-95k"/>
                             <constraint firstItem="KpR-Ef-SX9" firstAttribute="trailing" secondItem="7wT-RD-9mn" secondAttribute="trailing" constant="20" id="6rK-1N-93j"/>
                             <constraint firstItem="Ree-e0-e5E" firstAttribute="leading" secondItem="KpR-Ef-SX9" secondAttribute="leading" constant="20" id="8Pc-Hs-6YI"/>
-                            <constraint firstItem="7wT-RD-9mn" firstAttribute="top" secondItem="KpR-Ef-SX9" secondAttribute="top" constant="100" id="Mcy-cq-FVC"/>
+                            <constraint firstItem="7wT-RD-9mn" firstAttribute="top" secondItem="KpR-Ef-SX9" secondAttribute="top" constant="10" id="Mcy-cq-FVC"/>
                             <constraint firstItem="KpR-Ef-SX9" firstAttribute="trailing" secondItem="GdC-uM-NkU" secondAttribute="trailing" constant="20" id="Pih-hG-9RY"/>
                             <constraint firstItem="YSO-OY-VdS" firstAttribute="top" secondItem="GdC-uM-NkU" secondAttribute="bottom" constant="25" id="UNu-gL-1Er"/>
                             <constraint firstItem="7wT-RD-9mn" firstAttribute="leading" secondItem="KpR-Ef-SX9" secondAttribute="leading" constant="20" id="XX1-Bc-rN9"/>
@@ -207,7 +219,13 @@
                             <constraint firstItem="KpR-Ef-SX9" firstAttribute="trailing" secondItem="Ree-e0-e5E" secondAttribute="trailing" constant="20" id="w65-tE-jXj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="4Nx-0H-qYA"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="4Nx-0H-qYA"/>
+                    <connections>
+                        <outlet property="filmAdiLAbel" destination="7wT-RD-9mn" id="qN4-Bm-vM2"/>
+                        <outlet property="filmTuruLabel" destination="GdC-uM-NkU" id="jLZ-Wt-kKJ"/>
+                        <outlet property="webView" destination="Ree-e0-e5E" id="n7n-1b-DTM"/>
+                        <outlet property="yonetmenLabel" destination="YSO-OY-VdS" id="pCo-go-EMw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SyH-bX-YdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -218,8 +236,8 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MSz-RE-UVO" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z8R-Qd-AZd">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Z8R-Qd-AZd">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
