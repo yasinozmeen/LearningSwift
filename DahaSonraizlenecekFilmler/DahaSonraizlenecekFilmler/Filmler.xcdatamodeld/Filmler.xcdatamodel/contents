@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Arsiv" representedClassName="Arsiv" syncable="YES" codeGenerationType="class">
+        <attribute name="film_ad" optional="YES" attributeType="String"/>
+        <attribute name="film_tur" optional="YES" attributeType="String"/>
+        <attribute name="link" optional="YES" attributeType="String"/>
+        <attribute name="yonetmen" optional="YES" attributeType="String"/>
+    </entity>
     <entity name="Filmler" representedClassName="Filmler" syncable="YES" codeGenerationType="class">
         <attribute name="film_ad" optional="YES" attributeType="String"/>
         <attribute name="film_tur" optional="YES" attributeType="String"/>
@@ -8,5 +14,6 @@
     </entity>
     <elements>
         <element name="Filmler" positionX="-63" positionY="-18" width="128" height="89"/>
+        <element name="Arsiv" positionX="-63" positionY="9" width="128" height="89"/>
     </elements>
 </model>

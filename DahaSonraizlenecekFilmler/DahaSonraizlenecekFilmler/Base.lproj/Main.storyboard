@@ -11,7 +11,7 @@
         <!--Filmler-->
         <scene sceneID="k6h-Dp-qxv">
             <objects>
-                <viewController storyboardIdentifier="anasayfa" id="r5A-fX-UjB" customClass="ViewController" customModule="CoreDataEgzersiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="anasayfa" id="r5A-fX-UjB" customClass="ViewController" customModule="To_do_Film" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3AR-RX-aJJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="139" width="414" height="723"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="filmHucre" rowHeight="90" id="u2z-mK-Xfc" customClass="filmHucreTableViewCell" customModule="CoreDataEgzersiz" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="filmHucre" rowHeight="90" id="u2z-mK-Xfc" customClass="filmHucreTableViewCell" customModule="To_do_Film" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u2z-mK-Xfc" id="u1G-tQ-sDa">
@@ -79,6 +79,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Filmler" largeTitleDisplayMode="always" id="Ypa-UT-x90">
+                        <barButtonItem key="leftBarButtonItem" systemItem="organize" id="Kxc-Vh-qSg">
+                            <connections>
+                                <segue destination="hob-qK-rTl" kind="show" id="Ahg-tv-3Az"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="dPT-z5-edU">
                             <connections>
                                 <segue destination="Vez-md-C50" kind="show" identifier="" id="DIM-2r-bv7"/>
@@ -98,7 +103,7 @@
         <!--Film Ekle-->
         <scene sceneID="T8V-fr-Sqp">
             <objects>
-                <viewController id="Vez-md-C50" customClass="filmEkleViewController" customModule="CoreDataEgzersiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vez-md-C50" customClass="filmEkleViewController" customModule="To_do_Film" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="udX-ds-6fJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -166,10 +171,52 @@
             </objects>
             <point key="canvasLocation" x="2442" y="1"/>
         </scene>
+        <!--Arşiv-->
+        <scene sceneID="YPS-af-Ha8">
+            <objects>
+                <viewController id="hob-qK-rTl" customClass="arsivViewController" customModule="To_do_Film" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VfH-fL-Gat">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aHX-f7-TY3">
+                                <rect key="frame" x="0.0" y="148" width="414" height="714"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="hucre" id="bDo-jO-OAp">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bDo-jO-OAp" id="Exi-eE-zD4">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HyV-C2-FDG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aHX-f7-TY3" firstAttribute="leading" secondItem="HyV-C2-FDG" secondAttribute="leading" id="12m-FY-oH8"/>
+                            <constraint firstItem="aHX-f7-TY3" firstAttribute="top" secondItem="HyV-C2-FDG" secondAttribute="top" id="3pr-lD-8Qw"/>
+                            <constraint firstItem="HyV-C2-FDG" firstAttribute="trailing" secondItem="aHX-f7-TY3" secondAttribute="trailing" id="8kZ-Qb-VAm"/>
+                            <constraint firstItem="HyV-C2-FDG" firstAttribute="bottom" secondItem="aHX-f7-TY3" secondAttribute="bottom" id="NKl-Eh-cSw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Arşiv" id="1j9-gH-5b3"/>
+                    <connections>
+                        <outlet property="tableView" destination="aHX-f7-TY3" id="nmi-Fv-jaz"/>
+                        <segue destination="h3J-bO-hZ3" kind="show" identifier="arsivToDetay" id="DL4-jy-aKd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IBh-l6-a6J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1266" y="1037"/>
+        </scene>
         <!--Film Detay View Controller-->
         <scene sceneID="ChT-ti-Tes">
             <objects>
-                <viewController id="h3J-bO-hZ3" customClass="filmDetayViewController" customModule="CoreDataEgzersiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h3J-bO-hZ3" customClass="filmDetayViewController" customModule="To_do_Film" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kLB-fh-3Kj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,7 +239,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ree-e0-e5E">
+                            <wkWebView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ree-e0-e5E">
                                 <rect key="frame" x="20" y="268" width="374" height="574"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -200,10 +247,32 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sk8-r0-9zH">
+                                <rect key="frame" x="243" y="149" width="151" height="38"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Arşivden Çıkar">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="arsivdenCikar:" destination="h3J-bO-hZ3" eventType="touchUpInside" id="ekA-rq-QWX"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmM-A5-INF">
+                                <rect key="frame" x="290.5" y="91" width="56" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sil">
+                                    <fontDescription key="titleFontDescription" type="system" weight="black" pointSize="25"/>
+                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="silbutton:" destination="h3J-bO-hZ3" eventType="touchUpInside" id="AXp-rC-Hba"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KpR-Ef-SX9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="PmM-A5-INF" firstAttribute="centerY" secondItem="7wT-RD-9mn" secondAttribute="centerY" id="2Tp-IU-S6E"/>
                             <constraint firstItem="YSO-OY-VdS" firstAttribute="leading" secondItem="KpR-Ef-SX9" secondAttribute="leading" constant="20" id="6nf-KH-95k"/>
                             <constraint firstItem="KpR-Ef-SX9" firstAttribute="trailing" secondItem="7wT-RD-9mn" secondAttribute="trailing" constant="20" id="6rK-1N-93j"/>
                             <constraint firstItem="Ree-e0-e5E" firstAttribute="leading" secondItem="KpR-Ef-SX9" secondAttribute="leading" constant="20" id="8Pc-Hs-6YI"/>
@@ -212,18 +281,23 @@
                             <constraint firstItem="YSO-OY-VdS" firstAttribute="top" secondItem="GdC-uM-NkU" secondAttribute="bottom" constant="25" id="UNu-gL-1Er"/>
                             <constraint firstItem="7wT-RD-9mn" firstAttribute="leading" secondItem="KpR-Ef-SX9" secondAttribute="leading" constant="20" id="XX1-Bc-rN9"/>
                             <constraint firstItem="GdC-uM-NkU" firstAttribute="leading" secondItem="KpR-Ef-SX9" secondAttribute="leading" constant="20" id="euH-RT-tbx"/>
+                            <constraint firstItem="Sk8-r0-9zH" firstAttribute="centerX" secondItem="PmM-A5-INF" secondAttribute="centerX" id="g8y-xW-lRG"/>
                             <constraint firstItem="GdC-uM-NkU" firstAttribute="top" secondItem="7wT-RD-9mn" secondAttribute="bottom" constant="25" id="ghq-pH-vhP"/>
                             <constraint firstItem="KpR-Ef-SX9" firstAttribute="trailing" secondItem="YSO-OY-VdS" secondAttribute="trailing" constant="20" id="gku-mi-Y5p"/>
                             <constraint firstItem="Ree-e0-e5E" firstAttribute="top" secondItem="YSO-OY-VdS" secondAttribute="bottom" constant="30" id="ocN-8j-F4x"/>
+                            <constraint firstItem="Sk8-r0-9zH" firstAttribute="centerY" secondItem="GdC-uM-NkU" secondAttribute="centerY" id="ps9-bW-lnA"/>
+                            <constraint firstItem="KpR-Ef-SX9" firstAttribute="trailing" secondItem="Sk8-r0-9zH" secondAttribute="trailing" constant="20" id="rse-HG-cEw"/>
                             <constraint firstItem="KpR-Ef-SX9" firstAttribute="bottom" secondItem="Ree-e0-e5E" secondAttribute="bottom" constant="20" id="umk-PK-ab9"/>
                             <constraint firstItem="KpR-Ef-SX9" firstAttribute="trailing" secondItem="Ree-e0-e5E" secondAttribute="trailing" constant="20" id="w65-tE-jXj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="4Nx-0H-qYA"/>
                     <connections>
+                        <outlet property="arsivdenCikarOutlet" destination="Sk8-r0-9zH" id="fyZ-kM-ZS8"/>
                         <outlet property="filmAdiLAbel" destination="7wT-RD-9mn" id="qN4-Bm-vM2"/>
                         <outlet property="filmTuruLabel" destination="GdC-uM-NkU" id="jLZ-Wt-kKJ"/>
-                        <outlet property="webView" destination="Ree-e0-e5E" id="n7n-1b-DTM"/>
+                        <outlet property="silbuttonOutlet" destination="PmM-A5-INF" id="0Q8-9f-CtJ"/>
+                        <outlet property="webView" destination="Ree-e0-e5E" id="P2D-Be-emY"/>
                         <outlet property="yonetmenLabel" destination="YSO-OY-VdS" id="pCo-go-EMw"/>
                     </connections>
                 </viewController>
@@ -250,9 +324,15 @@
             <point key="canvasLocation" x="955" y="291"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="akm-Br-JKl"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -13,6 +13,7 @@
 		843B093C28886A87001BFAD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843B093A28886A87001BFAD1 /* Main.storyboard */; };
 		843B093E28886A89001BFAD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843B093D28886A89001BFAD1 /* Assets.xcassets */; };
 		843B094128886A89001BFAD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843B093F28886A89001BFAD1 /* LaunchScreen.storyboard */; };
+		8449F74B288A7F1B00770824 /* arsivViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8449F74A288A7F1B00770824 /* arsivViewController.swift */; };
 		84EAFFE728893B7900DF221F /* Filmler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84EAFFE528893B7900DF221F /* Filmler.xcdatamodeld */; };
 		84EAFFE928893C2A00DF221F /* filmHucreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAFFE828893C2A00DF221F /* filmHucreTableViewCell.swift */; };
 		84EAFFEB28893F4500DF221F /* filmEkleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAFFEA28893F4500DF221F /* filmEkleViewController.swift */; };
@@ -20,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		843B093128886A87001BFAD1 /* CoreDataEgzersiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataEgzersiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		843B093128886A87001BFAD1 /* To do Film.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To do Film.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		843B093428886A87001BFAD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		843B093628886A87001BFAD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		843B093828886A87001BFAD1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +29,7 @@
 		843B093D28886A89001BFAD1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		843B094028886A89001BFAD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843B094228886A89001BFAD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8449F74A288A7F1B00770824 /* arsivViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arsivViewController.swift; sourceTree = "<group>"; };
 		84EAFFE628893B7900DF221F /* Filmler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Filmler.xcdatamodel; sourceTree = "<group>"; };
 		84EAFFE828893C2A00DF221F /* filmHucreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filmHucreTableViewCell.swift; sourceTree = "<group>"; };
 		84EAFFEA28893F4500DF221F /* filmEkleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filmEkleViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +50,7 @@
 		843B092828886A87001BFAD1 = {
 			isa = PBXGroup;
 			children = (
-				843B093328886A87001BFAD1 /* CoreDataEgzersiz */,
+				843B093328886A87001BFAD1 /* DahaSonraizlenecekFilmler */,
 				843B093228886A87001BFAD1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,12 +58,12 @@
 		843B093228886A87001BFAD1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				843B093128886A87001BFAD1 /* CoreDataEgzersiz.app */,
+				843B093128886A87001BFAD1 /* To do Film.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		843B093328886A87001BFAD1 /* CoreDataEgzersiz */ = {
+		843B093328886A87001BFAD1 /* DahaSonraizlenecekFilmler */ = {
 			isa = PBXGroup;
 			children = (
 				84EAFFF1288940AC00DF221F /* Ekstra */,
@@ -72,12 +74,13 @@
 				843B094228886A89001BFAD1 /* Info.plist */,
 				84EAFFE528893B7900DF221F /* Filmler.xcdatamodeld */,
 			);
-			path = CoreDataEgzersiz;
+			path = DahaSonraizlenecekFilmler;
 			sourceTree = "<group>";
 		};
 		84EAFFEF2889408000DF221F /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				8449F74A288A7F1B00770824 /* arsivViewController.swift */,
 				843B093828886A87001BFAD1 /* ViewController.swift */,
 				84EAFFE828893C2A00DF221F /* filmHucreTableViewCell.swift */,
 				84EAFFEC2889404800DF221F /* filmDetayViewController.swift */,
@@ -98,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		843B093028886A87001BFAD1 /* CoreDataEgzersiz */ = {
+		843B093028886A87001BFAD1 /* To do Film */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 843B094528886A89001BFAD1 /* Build configuration list for PBXNativeTarget "CoreDataEgzersiz" */;
+			buildConfigurationList = 843B094528886A89001BFAD1 /* Build configuration list for PBXNativeTarget "To do Film" */;
 			buildPhases = (
 				843B092D28886A87001BFAD1 /* Sources */,
 				843B092E28886A87001BFAD1 /* Frameworks */,
@@ -110,9 +113,9 @@
 			);
 			dependencies = (
 			);
-			name = CoreDataEgzersiz;
+			name = "To do Film";
 			productName = CoreDataEgzersiz;
-			productReference = 843B093128886A87001BFAD1 /* CoreDataEgzersiz.app */;
+			productReference = 843B093128886A87001BFAD1 /* To do Film.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,7 +133,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 843B092C28886A87001BFAD1 /* Build configuration list for PBXProject "CoreDataEgzersiz" */;
+			buildConfigurationList = 843B092C28886A87001BFAD1 /* Build configuration list for PBXProject "To do Film" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,7 +146,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				843B093028886A87001BFAD1 /* CoreDataEgzersiz */,
+				843B093028886A87001BFAD1 /* To do Film */,
 			);
 		};
 /* End PBXProject section */
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8449F74B288A7F1B00770824 /* arsivViewController.swift in Sources */,
 				84EAFFE928893C2A00DF221F /* filmHucreTableViewCell.swift in Sources */,
 				843B093928886A87001BFAD1 /* ViewController.swift in Sources */,
 				843B093528886A87001BFAD1 /* AppDelegate.swift in Sources */,
@@ -321,10 +325,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q6XS9G2H7P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoreDataEgzersiz/Info.plist;
+				INFOPLIST_FILE = DahaSonraizlenecekFilmler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "To Do Film";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -349,10 +355,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q6XS9G2H7P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CoreDataEgzersiz/Info.plist;
+				INFOPLIST_FILE = DahaSonraizlenecekFilmler/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "To Do Film";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -371,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		843B092C28886A87001BFAD1 /* Build configuration list for PBXProject "CoreDataEgzersiz" */ = {
+		843B092C28886A87001BFAD1 /* Build configuration list for PBXProject "To do Film" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				843B094328886A89001BFAD1 /* Debug */,
@@ -380,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		843B094528886A89001BFAD1 /* Build configuration list for PBXNativeTarget "CoreDataEgzersiz" */ = {
+		843B094528886A89001BFAD1 /* Build configuration list for PBXNativeTarget "To do Film" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				843B094628886A89001BFAD1 /* Debug */,
