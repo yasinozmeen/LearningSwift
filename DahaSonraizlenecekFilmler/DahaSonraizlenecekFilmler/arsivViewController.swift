@@ -46,6 +46,7 @@ class arsivViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "arsivToDetay", sender: arsiv[indexPath.row])
+      
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -54,10 +54,10 @@ class filmDetayViewController: UIViewController {
             if let yonetmen = film.yonetmen{
                 yonetmenLabel.text = yonetmen
             }
-            if let url = URL(string: film.link!){
-                webView.isHidden = false
-                self.webView.load(URLRequest(url: url))
-            }
+//            if let url = URL(string: film.link!){
+//                webView.isHidden = false
+//                self.webView.load(URLRequest(url: url))
+//            }
             silbuttonOutlet.isHidden = true
             arsivdenCikarOutlet.isHidden = true
         }
