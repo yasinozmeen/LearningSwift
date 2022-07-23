@@ -60,7 +60,8 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let film = self.filmler[indexPath.row]
-        let arsivFilm = Arsiv(context: context)
+    
+        print("burası çalışıyo")
         
         let sil = UIContextualAction(style: .destructive, title: "Sil") { acction, vieew, bool in
             print("\(film.film_ad ?? "" ) silindi")
@@ -69,13 +70,13 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
            
         }
         
-        let duzenle = UIContextualAction(style: .normal, title: "Düzenle") { acction, vieew, bool in
+        let duzenle = UIContextualAction(style: .normal , title: "Düzenle") { acction, vieew, bool in
             
             let alertController = UIAlertController(title: "Düzenle", message: "Gerekli kısımları giriniz", preferredStyle: .alert)
             alertController.addTextField(){ textfield in
                 textfield.placeholder = "Film Adı"
                 textfield.text = self.filmler[indexPath.row].film_ad
-                
+
             }
             alertController.addTextField(){ textfield in
                 textfield.placeholder = "Film Türü"
@@ -86,7 +87,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
                 textfield.text = self.filmler[indexPath.row].yonetmen
             }
             let kaydetButton = UIAlertAction(title: "Kaydet", style: .default) { action in
-                
+
                 if alertController.textFields![0].text! != ""{
                     self.filmler[indexPath.row].film_ad = alertController.textFields![0].text!
                 }
@@ -96,21 +97,26 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
                 if alertController.textFields![2].text! != ""{
                     self.filmler[indexPath.row].yonetmen = alertController.textFields![2].text!
                 }
-        
+
                 self.degisikligiKaydetTabloYenile()
             }
+            
             let iptalButton = UIAlertAction(title: "İptal", style: .destructive) { action in
                 alertController.textFields![0].text! = ""
                 alertController.textFields![1].text! = ""
                 alertController.textFields![2].text! = ""
             }
+            
             alertController.addAction(kaydetButton)
             alertController.addAction(iptalButton)
             self.present(alertController, animated: true)
             
         }
         
-        let arsivAction = UIContextualAction(style: .destructive, title: "Arşivle") { acction, vieew, bool in
+        let arsivAction = UIContextualAction(style: .normal, title: "Arşivle") { acction, vieew, bool in
+            
+            let arsivFilm = Arsiv(context: self.context)
+            
             print("\(self.filmler[indexPath.row].film_ad ?? "" ) arşivlendi")
             self.context.delete(self.filmler[indexPath.row])
             arsivFilm.film_ad = film.film_ad
@@ -121,6 +127,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
             self.degisikligiKaydetTabloYenile()
            
         }
+        
         return UISwipeActionsConfiguration(actions: [sil,duzenle,arsivAction])
     }// kaydırmalı aksiyon
     

@@ -6,7 +6,7 @@ import CoreData
 class filmEkleViewController: UIViewController {
     
     let context = appDelegate.persistentContainer.viewContext
-    var rastgeleSayı = Int.random(in: 0...100)
+    //var rastgeleSayı = Int.random(in: 0...100)
     @IBOutlet var filmAdiTextField: UITextField!
     @IBOutlet var filmTuruTextField: UITextField!
     @IBOutlet var yonetmenTextField: UITextField!
@@ -14,7 +14,7 @@ class filmEkleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        filmAdiTextField.text = "\(rastgeleSayı)"
+      //  filmAdiTextField.text = "\(rastgeleSayı)"
 
     }
     @IBAction func ekleButton(_ sender: Any) {

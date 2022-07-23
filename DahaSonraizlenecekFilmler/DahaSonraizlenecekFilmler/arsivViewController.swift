@@ -8,11 +8,12 @@ class arsivViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     var arsiv = [Arsiv]()
     
     @IBOutlet var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
+     
     }
     func tumFilmleriAl(){
         do {
@@ -39,6 +40,7 @@ class arsivViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "hucre")
+        
         cell?.textLabel?.text = arsiv[indexPath.row].film_ad
         
         return cell!
