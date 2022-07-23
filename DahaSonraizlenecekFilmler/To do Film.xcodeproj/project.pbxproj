@@ -80,11 +80,11 @@
 		84EAFFEF2889408000DF221F /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				8449F74A288A7F1B00770824 /* arsivViewController.swift */,
 				843B093828886A87001BFAD1 /* ViewController.swift */,
 				84EAFFE828893C2A00DF221F /* filmHucreTableViewCell.swift */,
 				84EAFFEC2889404800DF221F /* filmDetayViewController.swift */,
 				84EAFFEA28893F4500DF221F /* filmEkleViewController.swift */,
+				8449F74A288A7F1B00770824 /* arsivViewController.swift */,
 			);
 			name = VC;
 			sourceTree = "<group>";

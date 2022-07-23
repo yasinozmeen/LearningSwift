@@ -7,7 +7,7 @@ class ViewController: UIViewController {
     
     let context = appDelegate.persistentContainer.viewContext
     
-    @IBOutlet var searchBar: UISearchBar!
+    
     @IBOutlet var filmlerTableView: UITableView!
     var filmler = [Filmler]()
     var filmlerArsiv = [Arsiv]()
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
         filmlerTableView.delegate = self
         filmlerTableView.dataSource = self
-        searchBar.delegate = self
+    
         tumFilmleriAl()
     }
     
@@ -72,6 +72,8 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         
         let duzenle = UIContextualAction(style: .normal , title: "Düzenle") { acction, vieew, bool in
             
+             
+            
             let alertController = UIAlertController(title: "Düzenle", message: "Gerekli kısımları giriniz", preferredStyle: .alert)
             alertController.addTextField(){ textfield in
                 textfield.placeholder = "Film Adı"
@@ -112,7 +114,7 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
             self.present(alertController, animated: true)
             
         }
-        
+        duzenle.backgroundColor = .blue
         let arsivAction = UIContextualAction(style: .normal, title: "Arşivle") { acction, vieew, bool in
             
             let arsivFilm = Arsiv(context: self.context)
@@ -144,8 +146,4 @@ extension ViewController:UITableViewDelegate,UITableViewDataSource{
         
     }
 }
-extension ViewController:UISearchBarDelegate{
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
-    }
-}
+
