@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dV9-Nd-ox6">
-                                <rect key="frame" x="0.0" y="139" width="414" height="723"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="filmHucre" rowHeight="90" id="u2z-mK-Xfc" customClass="filmHucreTableViewCell" customModule="To_do_Film" customModuleProvider="target">
@@ -49,20 +49,13 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="bLs-Mv-gRp">
-                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="s2i-J5-CMb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="dV9-Nd-ox6" firstAttribute="top" secondItem="s2i-J5-CMb" secondAttribute="top" id="45p-sH-GLO"/>
                             <constraint firstItem="dV9-Nd-ox6" firstAttribute="leading" secondItem="s2i-J5-CMb" secondAttribute="leading" id="7uu-Il-cRG"/>
-                            <constraint firstItem="bLs-Mv-gRp" firstAttribute="trailing" secondItem="s2i-J5-CMb" secondAttribute="trailing" id="YPD-Yo-AG5"/>
                             <constraint firstItem="s2i-J5-CMb" firstAttribute="bottom" secondItem="dV9-Nd-ox6" secondAttribute="bottom" id="a4u-V2-JYQ"/>
-                            <constraint firstItem="bLs-Mv-gRp" firstAttribute="leading" secondItem="s2i-J5-CMb" secondAttribute="leading" id="bOt-Sw-E8T"/>
-                            <constraint firstItem="bLs-Mv-gRp" firstAttribute="top" secondItem="s2i-J5-CMb" secondAttribute="top" id="bYr-xG-If7"/>
-                            <constraint firstItem="dV9-Nd-ox6" firstAttribute="top" secondItem="bLs-Mv-gRp" secondAttribute="bottom" id="t7O-Ze-D3k"/>
                             <constraint firstItem="s2i-J5-CMb" firstAttribute="trailing" secondItem="dV9-Nd-ox6" secondAttribute="trailing" id="x22-KX-jYO"/>
                         </constraints>
                     </view>
@@ -80,7 +73,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="filmlerTableView" destination="dV9-Nd-ox6" id="BJX-RH-mDp"/>
-                        <outlet property="searchBar" destination="bLs-Mv-gRp" id="GCt-PN-ond"/>
                         <segue destination="h3J-bO-hZ3" kind="show" identifier="toDetay" id="akm-Br-JKl"/>
                     </connections>
                 </viewController>

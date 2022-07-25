@@ -1,0 +1,425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84F341F3288F044200732E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F341F2288F044200732E86 /* AppDelegate.swift */; };
+		84F341F5288F044200732E86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F341F4288F044200732E86 /* SceneDelegate.swift */; };
+		84F341F7288F044200732E86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F341F6288F044200732E86 /* ViewController.swift */; };
+		84F341FA288F044200732E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F341F8288F044200732E86 /* Main.storyboard */; };
+		84F341FC288F044300732E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F341FB288F044300732E86 /* Assets.xcassets */; };
+		84F341FF288F044300732E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F341FD288F044300732E86 /* LaunchScreen.storyboard */; };
+		84F34214288F048100732E86 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F3420A288F048100732E86 /* FMDatabase.m */; };
+		84F34215288F048100732E86 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F3420C288F048100732E86 /* FMResultSet.m */; };
+		84F34216288F048100732E86 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F3420F288F048100732E86 /* FMDatabaseAdditions.m */; };
+		84F34217288F048100732E86 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F34210288F048100732E86 /* FMDatabaseQueue.m */; };
+		84F34218288F048100732E86 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F34213288F048100732E86 /* FMDatabasePool.m */; };
+		84F3421A288F04A900732E86 /* kisilergiris.db in Resources */ = {isa = PBXBuildFile; fileRef = 84F34219288F04A900732E86 /* kisilergiris.db */; };
+		84F3421C288F07F700732E86 /* Kisiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3421B288F07F700732E86 /* Kisiler.swift */; };
+		84F3421E288F091C00732E86 /* KisilerDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3421D288F091C00732E86 /* KisilerDao.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84F341EF288F044200732E86 /* 46.Uygulama-SQLiteUygulamalari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "46.Uygulama-SQLiteUygulamalari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F341F2288F044200732E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84F341F4288F044200732E86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		84F341F6288F044200732E86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84F341F9288F044200732E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84F341FB288F044300732E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84F341FE288F044300732E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84F34200288F044300732E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F34207288F046500732E86 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		84F34208288F048000732E86 /* 46.Uygulama-SQLiteUygulamalari-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "46.Uygulama-SQLiteUygulamalari-Bridging-Header.h"; sourceTree = "<group>"; };
+		84F34209288F048100732E86 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		84F3420A288F048100732E86 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		84F3420B288F048100732E86 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		84F3420C288F048100732E86 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		84F3420D288F048100732E86 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		84F3420E288F048100732E86 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		84F3420F288F048100732E86 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		84F34210288F048100732E86 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		84F34211288F048100732E86 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		84F34212288F048100732E86 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		84F34213288F048100732E86 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		84F34219288F04A900732E86 /* kisilergiris.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = kisilergiris.db; sourceTree = "<group>"; };
+		84F3421B288F07F700732E86 /* Kisiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kisiler.swift; sourceTree = "<group>"; };
+		84F3421D288F091C00732E86 /* KisilerDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KisilerDao.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F341EC288F044200732E86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84F341E6288F044200732E86 = {
+			isa = PBXGroup;
+			children = (
+				84F341F1288F044200732E86 /* 46.Uygulama-SQLiteUygulamalari */,
+				84F341F0288F044200732E86 /* Products */,
+				84F34206288F046500732E86 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84F341F0288F044200732E86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F341EF288F044200732E86 /* 46.Uygulama-SQLiteUygulamalari.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F341F1288F044200732E86 /* 46.Uygulama-SQLiteUygulamalari */ = {
+			isa = PBXGroup;
+			children = (
+				84F341F2288F044200732E86 /* AppDelegate.swift */,
+				84F341F4288F044200732E86 /* SceneDelegate.swift */,
+				84F341F6288F044200732E86 /* ViewController.swift */,
+				84F3421B288F07F700732E86 /* Kisiler.swift */,
+				84F3421D288F091C00732E86 /* KisilerDao.swift */,
+				84F341F8288F044200732E86 /* Main.storyboard */,
+				84F341FB288F044300732E86 /* Assets.xcassets */,
+				84F341FD288F044300732E86 /* LaunchScreen.storyboard */,
+				84F34200288F044300732E86 /* Info.plist */,
+				84F34212288F048100732E86 /* FMDatabase.h */,
+				84F3420A288F048100732E86 /* FMDatabase.m */,
+				84F3420E288F048100732E86 /* FMDatabaseAdditions.h */,
+				84F3420F288F048100732E86 /* FMDatabaseAdditions.m */,
+				84F3420D288F048100732E86 /* FMDatabasePool.h */,
+				84F34213288F048100732E86 /* FMDatabasePool.m */,
+				84F34209288F048100732E86 /* FMDatabaseQueue.h */,
+				84F34210288F048100732E86 /* FMDatabaseQueue.m */,
+				84F34211288F048100732E86 /* FMDB.h */,
+				84F3420B288F048100732E86 /* FMResultSet.h */,
+				84F34219288F04A900732E86 /* kisilergiris.db */,
+				84F3420C288F048100732E86 /* FMResultSet.m */,
+				84F34208288F048000732E86 /* 46.Uygulama-SQLiteUygulamalari-Bridging-Header.h */,
+			);
+			path = "46.Uygulama-SQLiteUygulamalari";
+			sourceTree = "<group>";
+		};
+		84F34206288F046500732E86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F34207288F046500732E86 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F341EE288F044200732E86 /* 46.Uygulama-SQLiteUygulamalari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F34203288F044300732E86 /* Build configuration list for PBXNativeTarget "46.Uygulama-SQLiteUygulamalari" */;
+			buildPhases = (
+				84F341EB288F044200732E86 /* Sources */,
+				84F341EC288F044200732E86 /* Frameworks */,
+				84F341ED288F044200732E86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "46.Uygulama-SQLiteUygulamalari";
+			productName = "46.Uygulama-SQLiteUygulamalari";
+			productReference = 84F341EF288F044200732E86 /* 46.Uygulama-SQLiteUygulamalari.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F341E7288F044200732E86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					84F341EE288F044200732E86 = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+				};
+			};
+			buildConfigurationList = 84F341EA288F044200732E86 /* Build configuration list for PBXProject "46.Uygulama-SQLiteUygulamalari" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84F341E6288F044200732E86;
+			productRefGroup = 84F341F0288F044200732E86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F341EE288F044200732E86 /* 46.Uygulama-SQLiteUygulamalari */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F341ED288F044200732E86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F3421A288F04A900732E86 /* kisilergiris.db in Resources */,
+				84F341FF288F044300732E86 /* LaunchScreen.storyboard in Resources */,
+				84F341FC288F044300732E86 /* Assets.xcassets in Resources */,
+				84F341FA288F044200732E86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F341EB288F044200732E86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F341F7288F044200732E86 /* ViewController.swift in Sources */,
+				84F341F3288F044200732E86 /* AppDelegate.swift in Sources */,
+				84F341F5288F044200732E86 /* SceneDelegate.swift in Sources */,
+				84F34217288F048100732E86 /* FMDatabaseQueue.m in Sources */,
+				84F34214288F048100732E86 /* FMDatabase.m in Sources */,
+				84F34218288F048100732E86 /* FMDatabasePool.m in Sources */,
+				84F3421E288F091C00732E86 /* KisilerDao.swift in Sources */,
+				84F34215288F048100732E86 /* FMResultSet.m in Sources */,
+				84F34216288F048100732E86 /* FMDatabaseAdditions.m in Sources */,
+				84F3421C288F07F700732E86 /* Kisiler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84F341F8288F044200732E86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F341F9288F044200732E86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84F341FD288F044300732E86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F341FE288F044300732E86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F34201288F044300732E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84F34202288F044300732E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F34204288F044300732E86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6XS9G2H7P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "46.Uygulama-SQLiteUygulamalari/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yasinozmeen.-6-Uygulama-SQLiteUygulamalari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "46.Uygulama-SQLiteUygulamalari/46.Uygulama-SQLiteUygulamalari-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84F34205288F044300732E86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q6XS9G2H7P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "46.Uygulama-SQLiteUygulamalari/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "yasinozmeen.-6-Uygulama-SQLiteUygulamalari";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "46.Uygulama-SQLiteUygulamalari/46.Uygulama-SQLiteUygulamalari-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F341EA288F044200732E86 /* Build configuration list for PBXProject "46.Uygulama-SQLiteUygulamalari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F34201288F044300732E86 /* Debug */,
+				84F34202288F044300732E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F34203288F044300732E86 /* Build configuration list for PBXNativeTarget "46.Uygulama-SQLiteUygulamalari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F34204288F044300732E86 /* Debug */,
+				84F34205288F044300732E86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F341E7288F044200732E86 /* Project object */;
+}
