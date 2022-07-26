@@ -11,10 +11,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       veritabanıKopyala()
+        
+        
+    
+        
+        
+        let gelenListe = KisilerDao().rasgele2Kisi()
+        for k in gelenListe{
+            print("Kisi id:\(k.kisi_id!)--Kisi Ad:\(k.kisi_ad!)--Kisi Yas:\(k.kisi_yas!)")
+        }
     }
 
     func veritabanıKopyala(){
+        
         let bundleYolu = Bundle.main.path(forResource: "kisilergiris", ofType: ".db")
         
         let hedefYol = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
@@ -33,6 +43,6 @@ class ViewController: UIViewController {
             }
         }
     }
-
+    
 }
 
