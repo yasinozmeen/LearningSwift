@@ -13,6 +13,16 @@
 		84F3423328901D6E00732E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F3423128901D6E00732E86 /* Main.storyboard */; };
 		84F3423528901D7000732E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F3423428901D7000732E86 /* Assets.xcassets */; };
 		84F3423828901D7000732E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F3423628901D7000732E86 /* LaunchScreen.storyboard */; };
+		84F3424028913CA100732E86 /* soruEkraniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3423F28913CA100732E86 /* soruEkraniViewController.swift */; };
+		84F3424228913CAB00732E86 /* sonucEkraniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3424128913CAB00732E86 /* sonucEkraniViewController.swift */; };
+		84F3425128913E6800732E86 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F3424628913E6700732E86 /* FMDatabaseAdditions.m */; };
+		84F3425228913E6800732E86 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F3424728913E6700732E86 /* FMDatabasePool.m */; };
+		84F3425328913E6800732E86 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F3424928913E6800732E86 /* FMDatabaseQueue.m */; };
+		84F3425428913E6800732E86 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F3424B28913E6800732E86 /* FMResultSet.m */; };
+		84F3425528913E6800732E86 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F3424F28913E6800732E86 /* FMDatabase.m */; };
+		84F3425928913F1D00732E86 /* bayrakquiz.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 84F3425828913F1D00732E86 /* bayrakquiz.sqlite */; };
+		84F3425B2891436E00732E86 /* Bayraklar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3425A2891436E00732E86 /* Bayraklar.swift */; };
+		84F3425D2891441F00732E86 /* BayraklarDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F3425C2891441F00732E86 /* BayraklarDao.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,24 @@
 		84F3423428901D7000732E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F3423728901D7000732E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84F3423928901D7000732E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F3423F28913CA100732E86 /* soruEkraniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soruEkraniViewController.swift; sourceTree = "<group>"; };
+		84F3424128913CAB00732E86 /* sonucEkraniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sonucEkraniViewController.swift; sourceTree = "<group>"; };
+		84F3424428913E5500732E86 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		84F3424528913E6700732E86 /* 47.Uygulama-BayrakUygulamasi-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "47.Uygulama-BayrakUygulamasi-Bridging-Header.h"; sourceTree = "<group>"; };
+		84F3424628913E6700732E86 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		84F3424728913E6700732E86 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		84F3424828913E6700732E86 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		84F3424928913E6800732E86 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		84F3424A28913E6800732E86 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		84F3424B28913E6800732E86 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		84F3424C28913E6800732E86 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		84F3424D28913E6800732E86 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		84F3424E28913E6800732E86 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		84F3424F28913E6800732E86 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		84F3425028913E6800732E86 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		84F3425828913F1D00732E86 /* bayrakquiz.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = bayrakquiz.sqlite; sourceTree = "<group>"; };
+		84F3425A2891436E00732E86 /* Bayraklar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bayraklar.swift; sourceTree = "<group>"; };
+		84F3425C2891441F00732E86 /* BayraklarDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayraklarDao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +70,7 @@
 			children = (
 				84F3422A28901D6E00732E86 /* 47.Uygulama-BayrakUygulamasi */,
 				84F3422928901D6E00732E86 /* Products */,
+				84F3424328913E5500732E86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +88,37 @@
 				84F3422B28901D6E00732E86 /* AppDelegate.swift */,
 				84F3422D28901D6E00732E86 /* SceneDelegate.swift */,
 				84F3422F28901D6E00732E86 /* ViewController.swift */,
+				84F3423F28913CA100732E86 /* soruEkraniViewController.swift */,
+				84F3424128913CAB00732E86 /* sonucEkraniViewController.swift */,
+				84F3425A2891436E00732E86 /* Bayraklar.swift */,
+				84F3425C2891441F00732E86 /* BayraklarDao.swift */,
 				84F3423128901D6E00732E86 /* Main.storyboard */,
 				84F3423428901D7000732E86 /* Assets.xcassets */,
 				84F3423628901D7000732E86 /* LaunchScreen.storyboard */,
 				84F3423928901D7000732E86 /* Info.plist */,
+				84F3425828913F1D00732E86 /* bayrakquiz.sqlite */,
+				84F3424A28913E6800732E86 /* FMDatabase.h */,
+				84F3424F28913E6800732E86 /* FMDatabase.m */,
+				84F3424E28913E6800732E86 /* FMDatabaseAdditions.h */,
+				84F3424628913E6700732E86 /* FMDatabaseAdditions.m */,
+				84F3425028913E6800732E86 /* FMDatabasePool.h */,
+				84F3424728913E6700732E86 /* FMDatabasePool.m */,
+				84F3424C28913E6800732E86 /* FMDatabaseQueue.h */,
+				84F3424928913E6800732E86 /* FMDatabaseQueue.m */,
+				84F3424828913E6700732E86 /* FMDB.h */,
+				84F3424D28913E6800732E86 /* FMResultSet.h */,
+				84F3424B28913E6800732E86 /* FMResultSet.m */,
+				84F3424528913E6700732E86 /* 47.Uygulama-BayrakUygulamasi-Bridging-Header.h */,
 			);
 			path = "47.Uygulama-BayrakUygulamasi";
+			sourceTree = "<group>";
+		};
+		84F3424328913E5500732E86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F3424428913E5500732E86 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +153,7 @@
 				TargetAttributes = {
 					84F3422728901D6E00732E86 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -125,6 +180,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84F3425928913F1D00732E86 /* bayrakquiz.sqlite in Resources */,
 				84F3423828901D7000732E86 /* LaunchScreen.storyboard in Resources */,
 				84F3423528901D7000732E86 /* Assets.xcassets in Resources */,
 				84F3423328901D6E00732E86 /* Main.storyboard in Resources */,
@@ -139,8 +195,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F3423028901D6E00732E86 /* ViewController.swift in Sources */,
+				84F3425328913E6800732E86 /* FMDatabaseQueue.m in Sources */,
+				84F3424228913CAB00732E86 /* sonucEkraniViewController.swift in Sources */,
+				84F3425528913E6800732E86 /* FMDatabase.m in Sources */,
 				84F3422C28901D6E00732E86 /* AppDelegate.swift in Sources */,
+				84F3424028913CA100732E86 /* soruEkraniViewController.swift in Sources */,
+				84F3425D2891441F00732E86 /* BayraklarDao.swift in Sources */,
+				84F3425228913E6800732E86 /* FMDatabasePool.m in Sources */,
+				84F3425428913E6800732E86 /* FMResultSet.m in Sources */,
 				84F3422E28901D6E00732E86 /* SceneDelegate.swift in Sources */,
+				84F3425128913E6800732E86 /* FMDatabaseAdditions.m in Sources */,
+				84F3425B2891436E00732E86 /* Bayraklar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,11 +350,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q6XS9G2H7P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "47.Uygulama-BayrakUygulamasi/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bayrak Oyunu";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -303,6 +370,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "yasinozmeen.-7-Uygulama-BayrakUygulamasi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "47.Uygulama-BayrakUygulamasi/47.Uygulama-BayrakUygulamasi-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,11 +382,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q6XS9G2H7P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "47.Uygulama-BayrakUygulamasi/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bayrak Oyunu";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -331,6 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "yasinozmeen.-7-Uygulama-BayrakUygulamasi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "47.Uygulama-BayrakUygulamasi/47.Uygulama-BayrakUygulamasi-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
