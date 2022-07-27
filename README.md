@@ -11,4 +11,5 @@
 + [FileManager](https://github.com/yasinozmeen/LearningSwift/tree/main/44.Uygulama-FileIslemleri) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/44.Uygulama-FileIslemleri/44ReadMe.md)
 + [CoreData-KisilerUygulaması](https://github.com/yasinozmeen/LearningSwift/tree/main/45.Uygulama-CoreDataKisilerUygulaması) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/45.Uygulama-CoreDataKisilerUygulaması/45ReadMe.md)
 + [ToDoFilmUygulaması](https://github.com/yasinozmeen/LearningSwift/tree/main/DahaSonraizlenecekFilmler) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/DahaSonraizlenecekFilmler/ReadMe.md)
++ [Bayrak Oyunu](https://github.com/yasinozmeen/LearningSwift/tree/main/47.Uygulama-BayrakUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/47.Uygulama-BayrakUygulamasi/47readMe.md)
 
