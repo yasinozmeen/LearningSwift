@@ -4,12 +4,13 @@
 
 
 ## 🗄 İçerik
-+ [YemekCustomTableViewCell](https://github.com/yasinozmeen/LearningSwift/tree/main/37.Uygulama-YemekSepetiUygulaması) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/tree/main/37.Uygulama-YemekSepetiUygulaması)
-+ [FilmCustomCollectionViewCell](https://github.com/yasinozmeen/LearningSwift/tree/main/40.Uygulama-CollectionViewFilmUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/40.Uygulama-CollectionViewFilmUygulamasi/40README.md)
-+ [SearchBarFildering](https://github.com/yasinozmeen/LearningSwift/tree/main/41.Uygulama-SearchBarANDTableView) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/41.Uygulama-SearchBarANDTableView/41readME.md)
-+ [UserDefault-LoginScreen](https://github.com/yasinozmeen/LearningSwift/tree/main/43.Uygulama-LoginEkraniUserDefault) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/43.Uygulama-LoginEkraniUserDefault/43readMe.md)
-+ [FileManager](https://github.com/yasinozmeen/LearningSwift/tree/main/44.Uygulama-FileIslemleri) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/44.Uygulama-FileIslemleri/44ReadMe.md)
-+ [CoreData-KisilerUygulaması](https://github.com/yasinozmeen/LearningSwift/tree/main/45.Uygulama-CoreDataKisilerUygulaması) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/45.Uygulama-CoreDataKisilerUygulaması/45ReadMe.md)
-+ [ToDoFilmUygulaması](https://github.com/yasinozmeen/LearningSwift/tree/main/DahaSonraizlenecekFilmler) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/DahaSonraizlenecekFilmler/ReadMe.md)
-+ [Bayrak Oyunu](https://github.com/yasinozmeen/LearningSwift/tree/main/47.Uygulama-BayrakUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/47.Uygulama-BayrakUygulamasi/47readMe.md)
++ [YemekCustomTableViewCell](https://github.com/yasinozmeen/LearningSwift/tree/main/√YemekSepetiUygulaması) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/√YemekSepetiUygulaması/37ReadME.md)
++ [FilmCustomCollectionViewCell](https://github.com/yasinozmeen/LearningSwift/tree/main/√CollectionViewFilmUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/√CollectionViewFilmUygulamasi/40README.md)
++ [SearchBarFildering](https://github.com/yasinozmeen/LearningSwift/tree/main/√SearchBarANDTableView) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/√SearchBarANDTableView/41readME.md)
++ [UserDefault-LoginScreen](https://github.com/yasinozmeen/LearningSwift/tree/main/√LoginEkraniUserDefault) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/√LoginEkraniUserDefault/43readMe.md)
++ [FileManager](https://github.com/yasinozmeen/LearningSwift/tree/main/√FileIslemleri) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/√FileIslemleri/44ReadMe.md)
++ [CoreData-KisilerUygulaması](https://github.com/yasinozmeen/LearningSwift/tree/main/√CoreDataKisilerUygulaması) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/√CoreDataKisilerUygulaması/45ReadMe.md)
++ [ToDoFilmUygulaması](https://github.com/yasinozmeen/LearningSwift/tree/main/√ToDoFilm) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/√ToDoFilm/ReadMe.md)
++ [SQLiteEgzersiz](https://github.com/yasinozmeen/LearningSwift/tree/main/√SQLiteUygulamalari) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/√SQLiteUygulamalari/46ReadME.md)
++ [Bayrak Oyunu](https://github.com/yasinozmeen/LearningSwift/tree/main/√BayrakUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/√BayrakUygulamasi/47readMe.md)
 
