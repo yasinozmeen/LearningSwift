@@ -5,3 +5,4 @@ SQLlite veri tabanından nesneleri çekiyoruz ve tableView'da listeliyoruz arama
 
 > Nesne üzerine tıkladığımızda detay sayfasına gidiyor  
 
+![Simulator Screen Recording - iPhone SE (3rd generation) - 2022-07-28 at 17 48 06](https://user-images.githubusercontent.com/54503469/181566158-afd27cd7-92c4-4f96-98ba-797c9e22bb10.gif)
