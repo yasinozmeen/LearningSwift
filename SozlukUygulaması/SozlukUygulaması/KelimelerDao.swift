@@ -29,15 +29,16 @@ class KelimelerDao{
         return liste
     }
     
-    func aramaYapma(turkce:String) -> [Kelimeler]{
+    func aramaYapma(kelime:String) -> [Kelimeler]{
         db?.open()
         var liste = [Kelimeler]()
         
         do{
-           let rs = try db!.executeQuery("SELECT * FROM kelimeler WHERE turkce like '%\(turkce)%' ", values: [turkce])
+           let rs = try db!.executeQuery("SELECT * FROM kelimeler WHERE turkce OR ingilizce like '%\(kelime)%' ", values: [kelime])
             
             while rs.next(){
                 let kelime = Kelimeler(kelime_id: Int(rs.string(forColumn: "kelime_id") ?? "" )!, turkce: rs.string(forColumn: "turkce")!, ingilizce: rs.string(forColumn: "ingilizce")!)
+                
                 liste.append(kelime)
             }
         }catch{

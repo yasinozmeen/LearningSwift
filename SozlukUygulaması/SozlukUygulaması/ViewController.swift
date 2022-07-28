@@ -58,7 +58,7 @@ extension ViewController: UISearchBarDelegate{
             aramaYapiliyorMu = true
             
             print("Aranan kelime: \(searchText)")
-            arananListe = KelimelerDao().aramaYapma(turkce: searchText)
+            arananListe = KelimelerDao().aramaYapma(kelime: searchText)
             tableView.reloadData()
             
             for k in arananListe{
