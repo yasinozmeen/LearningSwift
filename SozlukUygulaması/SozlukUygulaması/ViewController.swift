@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any? ) {
         let GVC = segue.destination as! detayViewController
         
-        GVC.gelenKelime = sender as! Kelimeler
+        GVC.gelenKelime = sender as? Kelimeler
     }
     
     func veritabaniKopyala(){
@@ -100,18 +100,13 @@ extension ViewController: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        
-       
-        
-        
         if aramaYapiliyorMu{
-            var gidecekKelime = arananListe[indexPath.row]
+            let gidecekKelime = arananListe[indexPath.row]
             performSegue(withIdentifier: "toDetay", sender: gidecekKelime)
         }else{
-            var gidecekKelime = liste[indexPath.row]
+            let gidecekKelime = liste[indexPath.row]
             performSegue(withIdentifier: "toDetay", sender: gidecekKelime)
         }
     } // MARK: DidSelectRowAt
     
 }
-

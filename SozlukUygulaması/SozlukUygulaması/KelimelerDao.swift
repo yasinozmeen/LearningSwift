@@ -34,7 +34,7 @@ class KelimelerDao{
         var liste = [Kelimeler]()
         
         do{
-           let rs = try db!.executeQuery("SELECT * FROM kelimeler WHERE turkce OR ingilizce like '%\(kelime)%' ", values: [kelime])
+            let rs = try db!.executeQuery("SELECT * FROM kelimeler WHERE turkce OR ingilizce like '%\(kelime)%' ", values: [kelime])
             
             while rs.next(){
                 let kelime = Kelimeler(kelime_id: Int(rs.string(forColumn: "kelime_id") ?? "" )!, turkce: rs.string(forColumn: "turkce")!, ingilizce: rs.string(forColumn: "ingilizce")!)
@@ -48,9 +48,10 @@ class KelimelerDao{
         db?.close()
         return liste
     }
-    
-    
 }
+
+
+
 
 
 
