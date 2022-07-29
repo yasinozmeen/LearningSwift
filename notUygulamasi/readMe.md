@@ -1,8 +1,9 @@
-# Sözlük Uygulaması
-## SQLite veritabanı ile yapılmış bir sözlük uygulaması
+# Notlar Uygulaması
+## SQLite veritabanı ile yapılmış bir ders notu tutma uygulaması
 
-SQLlite veri tabanından nesneleri çekiyoruz ve tableView'da listeliyoruz arama yapıldığı zaman türkçe ve ingilizce ortak olacak şekilde filtreleme yapıp tableView'daki satır sayısını azaltıp filtreleme sonucu çıkan nesneleri tableView a yerleştiriyor
+SQLlite veri tabanından nesneleri çekiyoruz ve tableView'da listeliyoruz. Not ekleme sayfasından notlarımızı ekleyebiliyoruz ve eğer not eklediğimizde ana ekrana atmasını isemiyorsak oklu ekleme switchini açık konumta tutabiliriz. 
+Nesne üzerine tıkladığımızda detay sayfasına gidiyor. Detay sayfasından notu silebilir ve güncelleyebiliriz. 
+ 
+ 
 
-> Nesne üzerine tıkladığımızda detay sayfasına gidiyor  
-
-![Simulator Screen Recording - iPhone SE (3rd generation) - 2022-07-28 at 17 48 06](https://user-images.githubusercontent.com/54503469/181566158-afd27cd7-92c4-4f96-98ba-797c9e22bb10.gif)
+![Simulator Screen Recording - iPhone 11 - 2022-07-29 at 17 22 39](https://user-images.githubusercontent.com/54503469/181780773-d629df9a-b8f8-4bfe-ae45-9b99236dce1c.gif)
