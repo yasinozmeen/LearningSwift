@@ -14,4 +14,4 @@
 + [SQLiteEgzersiz](https://github.com/yasinozmeen/LearningSwift/tree/main/√SQLiteUygulamalari) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/√SQLiteUygulamalari/46ReadME.md)
 + [BayrakOyunu](https://github.com/yasinozmeen/LearningSwift/tree/main/√BayrakUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/√BayrakUygulamasi/47readMe.md)
 + [SözlükUygulaması](https://github.com/yasinozmeen/LearningSwift/tree/main/SozlukUygulaması) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/SozlukUygulaması/readMe.md)
-
++ [NotUygulaması](https://github.com/yasinozmeen/LearningSwift/blob/main/notUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/notUygulamasi/readMe.md)
