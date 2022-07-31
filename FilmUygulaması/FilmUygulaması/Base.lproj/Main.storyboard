@@ -52,6 +52,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Katagoriler" id="lew-kL-T4e"/>
                     <connections>
+                        <outlet property="tableView" destination="Lj7-Ym-v5W" id="OWH-Nq-ggF"/>
                         <segue destination="WqC-vB-igq" kind="show" id="Z5t-9Z-zi7"/>
                     </connections>
                 </viewController>
@@ -62,7 +63,7 @@
         <!--Dram-->
         <scene sceneID="2ey-e0-S06">
             <objects>
-                <viewController id="WqC-vB-igq" sceneMemberID="viewController">
+                <viewController id="WqC-vB-igq" customClass="katogorilerViewController" customModule="FilmUygulaması" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HDd-nT-bjm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,7 +147,7 @@
         <!--Film Detay-->
         <scene sceneID="WWJ-ll-rSL">
             <objects>
-                <viewController id="lTW-Ic-hYz" sceneMemberID="viewController">
+                <viewController id="lTW-Ic-hYz" customClass="filmDetayViewController" customModule="FilmUygulaması" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EGL-lT-9WM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

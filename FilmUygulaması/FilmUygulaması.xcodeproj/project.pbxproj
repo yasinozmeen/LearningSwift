@@ -13,6 +13,14 @@
 		84386049289560BC00F90FF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84386047289560BC00F90FF4 /* Main.storyboard */; };
 		8438604B289560BF00F90FF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8438604A289560BF00F90FF4 /* Assets.xcassets */; };
 		8438604E289560BF00F90FF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8438604C289560BF00F90FF4 /* LaunchScreen.storyboard */; };
+		843860852896850900F90FF4 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8438607A2896850900F90FF4 /* FMDatabaseAdditions.m */; };
+		843860862896850900F90FF4 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 8438607D2896850900F90FF4 /* FMDatabase.m */; };
+		843860872896850900F90FF4 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8438607E2896850900F90FF4 /* FMDatabaseQueue.m */; };
+		843860882896850900F90FF4 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 8438607F2896850900F90FF4 /* FMResultSet.m */; };
+		843860892896850900F90FF4 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 843860822896850900F90FF4 /* FMDatabasePool.m */; };
+		8438608D2896853D00F90FF4 /* filmler.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8438608C2896853D00F90FF4 /* filmler.sqlite */; };
+		8438608F2896856D00F90FF4 /* katogorilerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438608E2896856D00F90FF4 /* katogorilerViewController.swift */; };
+		843860912896857C00F90FF4 /* filmDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843860902896857C00F90FF4 /* filmDetayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,22 @@
 		8438604A289560BF00F90FF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8438604D289560BF00F90FF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8438604F289560BF00F90FF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843860792896850800F90FF4 /* FilmUygulaması-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FilmUygulaması-Bridging-Header.h"; sourceTree = "<group>"; };
+		8438607A2896850900F90FF4 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		8438607B2896850900F90FF4 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		8438607C2896850900F90FF4 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		8438607D2896850900F90FF4 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		8438607E2896850900F90FF4 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		8438607F2896850900F90FF4 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		843860802896850900F90FF4 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		843860812896850900F90FF4 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		843860822896850900F90FF4 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		843860832896850900F90FF4 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		843860842896850900F90FF4 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		8438608B2896851400F90FF4 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		8438608C2896853D00F90FF4 /* filmler.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = filmler.sqlite; sourceTree = "<group>"; };
+		8438608E2896856D00F90FF4 /* katogorilerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = katogorilerViewController.swift; sourceTree = "<group>"; };
+		843860902896857C00F90FF4 /* filmDetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filmDetayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +66,7 @@
 			children = (
 				84386040289560BC00F90FF4 /* FilmUygulaması */,
 				8438603F289560BC00F90FF4 /* Products */,
+				8438608A2896851400F90FF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +85,34 @@
 				84386043289560BC00F90FF4 /* SceneDelegate.swift */,
 				84386045289560BC00F90FF4 /* ViewController.swift */,
 				84386047289560BC00F90FF4 /* Main.storyboard */,
+				8438608E2896856D00F90FF4 /* katogorilerViewController.swift */,
+				843860902896857C00F90FF4 /* filmDetayViewController.swift */,
 				8438604A289560BF00F90FF4 /* Assets.xcassets */,
 				8438604C289560BF00F90FF4 /* LaunchScreen.storyboard */,
 				8438604F289560BF00F90FF4 /* Info.plist */,
+				843860802896850900F90FF4 /* FMDatabase.h */,
+				8438607D2896850900F90FF4 /* FMDatabase.m */,
+				843860842896850900F90FF4 /* FMDatabaseAdditions.h */,
+				8438607A2896850900F90FF4 /* FMDatabaseAdditions.m */,
+				843860812896850900F90FF4 /* FMDatabasePool.h */,
+				843860822896850900F90FF4 /* FMDatabasePool.m */,
+				8438607C2896850900F90FF4 /* FMDatabaseQueue.h */,
+				8438607E2896850900F90FF4 /* FMDatabaseQueue.m */,
+				843860832896850900F90FF4 /* FMDB.h */,
+				8438607B2896850900F90FF4 /* FMResultSet.h */,
+				8438607F2896850900F90FF4 /* FMResultSet.m */,
+				843860792896850800F90FF4 /* FilmUygulaması-Bridging-Header.h */,
+				8438608C2896853D00F90FF4 /* filmler.sqlite */,
 			);
 			path = "FilmUygulaması";
+			sourceTree = "<group>";
+		};
+		8438608A2896851400F90FF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8438608B2896851400F90FF4 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +147,7 @@
 				TargetAttributes = {
 					8438603D289560BC00F90FF4 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -126,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8438604E289560BF00F90FF4 /* LaunchScreen.storyboard in Resources */,
+				8438608D2896853D00F90FF4 /* filmler.sqlite in Resources */,
 				8438604B289560BF00F90FF4 /* Assets.xcassets in Resources */,
 				84386049289560BC00F90FF4 /* Main.storyboard in Resources */,
 			);
@@ -140,7 +190,14 @@
 			files = (
 				84386046289560BC00F90FF4 /* ViewController.swift in Sources */,
 				84386042289560BC00F90FF4 /* AppDelegate.swift in Sources */,
+				843860882896850900F90FF4 /* FMResultSet.m in Sources */,
 				84386044289560BC00F90FF4 /* SceneDelegate.swift in Sources */,
+				843860912896857C00F90FF4 /* filmDetayViewController.swift in Sources */,
+				8438608F2896856D00F90FF4 /* katogorilerViewController.swift in Sources */,
+				843860862896850900F90FF4 /* FMDatabase.m in Sources */,
+				843860892896850900F90FF4 /* FMDatabasePool.m in Sources */,
+				843860852896850900F90FF4 /* FMDatabaseAdditions.m in Sources */,
+				843860872896850900F90FF4 /* FMDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +342,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q6XS9G2H7P;
@@ -303,6 +361,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "yasinozmeen.FilmUygulamas-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FilmUygulaması/FilmUygulaması-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q6XS9G2H7P;
@@ -331,6 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "yasinozmeen.FilmUygulamas-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FilmUygulaması/FilmUygulaması-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
