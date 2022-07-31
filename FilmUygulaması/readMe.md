@@ -1,7 +1,7 @@
 # Filmler Uygulaması
 ## SQLite veritabanı ile yapılmış bir film Uygulaması
 
-SQLlite veri tabanından nesneleri çekiyoruz ve tableView'da listeliyoruz. Not ekleme sayfasından notlarımızı ekleyebiliyoruz ve eğer not eklediğimizde ana ekrana atmasını isemiyorsak oklu ekleme switchini açık konumta tutabiliriz. 
-Nesne üzerine tıkladığımızda detay sayfasına gidiyor. Detay sayfasından notu silebilir ve güncelleyebiliriz. 
+SQLlite veri tabanından nesneleri çekiyoruz ve tableView'da kategorileri listeliyoruz. Seçilen kategoriye uygun olan filmleri gösteriyoruz ve seçilen uygulamanın detay sayfasına gidiyoruz. 
  
  
+![Simulator Screen Recording - iPhone 13 Pro Max - 2022-07-31 at 15 15 54](https://user-images.githubusercontent.com/54503469/182025927-b5722f08-59b8-46f0-adfd-5edbc9d2571a.gif)
