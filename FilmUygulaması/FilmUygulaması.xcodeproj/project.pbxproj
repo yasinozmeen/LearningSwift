@@ -21,6 +21,13 @@
 		8438608D2896853D00F90FF4 /* filmler.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8438608C2896853D00F90FF4 /* filmler.sqlite */; };
 		8438608F2896856D00F90FF4 /* katogorilerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438608E2896856D00F90FF4 /* katogorilerViewController.swift */; };
 		843860912896857C00F90FF4 /* filmDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843860902896857C00F90FF4 /* filmDetayViewController.swift */; };
+		843860932896869200F90FF4 /* filmHucreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843860922896869200F90FF4 /* filmHucreCollectionViewCell.swift */; };
+		843860952896877500F90FF4 /* Filmler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843860942896877500F90FF4 /* Filmler.swift */; };
+		843860972896877A00F90FF4 /* Yonetmenler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843860962896877A00F90FF4 /* Yonetmenler.swift */; };
+		843860992896877F00F90FF4 /* Kategoriler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843860982896877F00F90FF4 /* Kategoriler.swift */; };
+		8438609B28968C2200F90FF4 /* FilmlerDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438609A28968C2200F90FF4 /* FilmlerDao.swift */; };
+		8438609D28968CCA00F90FF4 /* KategorilerDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438609C28968CCA00F90FF4 /* KategorilerDao.swift */; };
+		8438609F2896922800F90FF4 /* kategoriTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438609E2896922800F90FF4 /* kategoriTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +55,13 @@
 		8438608C2896853D00F90FF4 /* filmler.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = filmler.sqlite; sourceTree = "<group>"; };
 		8438608E2896856D00F90FF4 /* katogorilerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = katogorilerViewController.swift; sourceTree = "<group>"; };
 		843860902896857C00F90FF4 /* filmDetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filmDetayViewController.swift; sourceTree = "<group>"; };
+		843860922896869200F90FF4 /* filmHucreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filmHucreCollectionViewCell.swift; sourceTree = "<group>"; };
+		843860942896877500F90FF4 /* Filmler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filmler.swift; sourceTree = "<group>"; };
+		843860962896877A00F90FF4 /* Yonetmenler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yonetmenler.swift; sourceTree = "<group>"; };
+		843860982896877F00F90FF4 /* Kategoriler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kategoriler.swift; sourceTree = "<group>"; };
+		8438609A28968C2200F90FF4 /* FilmlerDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmlerDao.swift; sourceTree = "<group>"; };
+		8438609C28968CCA00F90FF4 /* KategorilerDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategorilerDao.swift; sourceTree = "<group>"; };
+		8438609E2896922800F90FF4 /* kategoriTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kategoriTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +97,17 @@
 			children = (
 				84386041289560BC00F90FF4 /* AppDelegate.swift */,
 				84386043289560BC00F90FF4 /* SceneDelegate.swift */,
-				84386045289560BC00F90FF4 /* ViewController.swift */,
 				84386047289560BC00F90FF4 /* Main.storyboard */,
+				84386045289560BC00F90FF4 /* ViewController.swift */,
+				8438609E2896922800F90FF4 /* kategoriTableViewCell.swift */,
 				8438608E2896856D00F90FF4 /* katogorilerViewController.swift */,
+				843860922896869200F90FF4 /* filmHucreCollectionViewCell.swift */,
 				843860902896857C00F90FF4 /* filmDetayViewController.swift */,
+				843860942896877500F90FF4 /* Filmler.swift */,
+				843860962896877A00F90FF4 /* Yonetmenler.swift */,
+				843860982896877F00F90FF4 /* Kategoriler.swift */,
+				8438609A28968C2200F90FF4 /* FilmlerDao.swift */,
+				8438609C28968CCA00F90FF4 /* KategorilerDao.swift */,
 				8438604A289560BF00F90FF4 /* Assets.xcassets */,
 				8438604C289560BF00F90FF4 /* LaunchScreen.storyboard */,
 				8438604F289560BF00F90FF4 /* Info.plist */,
@@ -189,15 +210,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				84386046289560BC00F90FF4 /* ViewController.swift in Sources */,
+				843860992896877F00F90FF4 /* Kategoriler.swift in Sources */,
+				843860972896877A00F90FF4 /* Yonetmenler.swift in Sources */,
 				84386042289560BC00F90FF4 /* AppDelegate.swift in Sources */,
+				843860932896869200F90FF4 /* filmHucreCollectionViewCell.swift in Sources */,
 				843860882896850900F90FF4 /* FMResultSet.m in Sources */,
 				84386044289560BC00F90FF4 /* SceneDelegate.swift in Sources */,
 				843860912896857C00F90FF4 /* filmDetayViewController.swift in Sources */,
+				8438609D28968CCA00F90FF4 /* KategorilerDao.swift in Sources */,
+				8438609F2896922800F90FF4 /* kategoriTableViewCell.swift in Sources */,
 				8438608F2896856D00F90FF4 /* katogorilerViewController.swift in Sources */,
 				843860862896850900F90FF4 /* FMDatabase.m in Sources */,
 				843860892896850900F90FF4 /* FMDatabasePool.m in Sources */,
 				843860852896850900F90FF4 /* FMDatabaseAdditions.m in Sources */,
 				843860872896850900F90FF4 /* FMDatabaseQueue.m in Sources */,
+				8438609B28968C2200F90FF4 /* FilmlerDao.swift in Sources */,
+				843860952896877500F90FF4 /* Filmler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

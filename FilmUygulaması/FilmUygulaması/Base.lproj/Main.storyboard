@@ -21,22 +21,28 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="lel-PO-x2U">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="hucre" id="lel-PO-x2U" customClass="kategoriTableViewCell" customModule="FilmUygulaması" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lel-PO-x2U" id="B9S-zN-NAF">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IT2-aD-mim">
-                                                    <rect key="frame" x="186" y="11" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IT2-aD-mim">
+                                                    <rect key="frame" x="186" y="11.5" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IT2-aD-mim" firstAttribute="centerY" secondItem="B9S-zN-NAF" secondAttribute="centerY" id="X0t-tx-ROD"/>
+                                                <constraint firstItem="IT2-aD-mim" firstAttribute="centerX" secondItem="B9S-zN-NAF" secondAttribute="centerX" id="hl7-2W-rID"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="IT2-aD-mim" id="Auf-YO-e29"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -52,8 +58,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Katagoriler" id="lew-kL-T4e"/>
                     <connections>
-                        <outlet property="tableView" destination="Lj7-Ym-v5W" id="OWH-Nq-ggF"/>
-                        <segue destination="WqC-vB-igq" kind="show" id="Z5t-9Z-zi7"/>
+                        <outlet property="tableView" destination="Lj7-Ym-v5W" id="nw9-Sl-wGJ"/>
+                        <segue destination="WqC-vB-igq" kind="show" identifier="toKategori" id="Z5t-9Z-zi7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -71,14 +77,15 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tLQ-90-c3X">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tcy-TM-ilI">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tcy-TM-ilI">
                                     <size key="itemSize" width="156" height="304"/>
+                                    <size key="estimatedItemSize" width="156" height="304"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NXu-ci-ZU8">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="filmHucre" id="NXu-ci-ZU8" customClass="filmHucreCollectionViewCell" customModule="FilmUygulaması" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="156" height="304"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="M4a-tV-MjU">
@@ -108,6 +115,9 @@
                                                     <rect key="frame" x="35.5" y="272" width="85" height="31"/>
                                                     <state key="normal" title="Button"/>
                                                     <buttonConfiguration key="configuration" style="plain" title="Sipariş Et"/>
+                                                    <connections>
+                                                        <action selector="button:" destination="NXu-ci-ZU8" eventType="touchUpInside" id="Yy0-R1-lgL"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -122,6 +132,11 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="156" height="304"/>
+                                        <connections>
+                                            <outlet property="filmAd" destination="HmF-JH-paa" id="Xf7-ym-2PK"/>
+                                            <outlet property="fiyat" destination="eRT-pc-EUf" id="mdo-73-bu0"/>
+                                            <outlet property="imageView" destination="Od3-TL-FnQ" id="ayJ-js-gdm"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -137,7 +152,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Dram" id="cxq-rl-f2P"/>
                     <connections>
-                        <segue destination="lTW-Ic-hYz" kind="show" id="DvJ-Ii-7uf"/>
+                        <outlet property="collectionView" destination="tLQ-90-c3X" id="bbt-XO-I55"/>
+                        <segue destination="lTW-Ic-hYz" kind="show" identifier="toDetay" id="DvJ-Ii-7uf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6o-3a-6Bg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -200,6 +216,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Film Detay" id="2V4-WW-uyk"/>
+                    <connections>
+                        <outlet property="filmAdLabel" destination="BJ8-MS-4S6" id="9xm-3y-Kwu"/>
+                        <outlet property="filmyılLAbel" destination="0ku-wQ-7pT" id="oNa-j2-zth"/>
+                        <outlet property="imageView" destination="gre-Uo-keg" id="2lv-N8-7ky"/>
+                        <outlet property="katagori" destination="nAq-sC-fIV" id="RZ1-Xe-BoR"/>
+                        <outlet property="yönetmen" destination="wDo-sX-WTL" id="toz-SS-Igp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCe-CR-4BL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
