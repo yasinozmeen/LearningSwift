@@ -1,8 +1,6 @@
-# Sözlük Uygulaması
-## SQLite veritabanı ile yapılmış bir sözlük uygulaması
+# Kişiler Uygulaması
+## SQLite veritabanı ile yapılmış bir rehber uygulaması
 
-SQLlite veri tabanından nesneleri çekiyoruz ve tableView'da listeliyoruz arama yapıldığı zaman türkçe ve ingilizce ortak olacak şekilde filtreleme yapıp tableView'daki satır sayısını azaltıp filtreleme sonucu çıkan nesneleri tableView a yerleştiriyor
+SQLlite veri tabanından nesneleri çekiyoruz ve tableView'da listeliyoruz arama yapıldığı zaman aramaya göre listeleyebiliyoruz. kişiye tıklandığında detay sayfasına, swipe actionlarda ilse düzenleme ve silme var düzenleye basıldığı zaman bizi düzenlee ekranına atıyor ve düzenlediğimiz zaman bizi tekrar ana sayfaya atıyor. 
 
-> Nesne üzerine tıkladığımızda detay sayfasına gidiyor  
-
-![Simulator Screen Recording - iPhone SE (3rd generation) - 2022-07-28 at 17 48 06](https://user-images.githubusercontent.com/54503469/181566158-afd27cd7-92c4-4f96-98ba-797c9e22bb10.gif)
+![Simulator Screen Recording - iPhone SE (3rd generation) - 2022-08-01 at 20 11 04](https://user-images.githubusercontent.com/54503469/182205282-298b8421-763d-44af-85d8-92185c342ffd.gif)
