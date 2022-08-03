@@ -17,3 +17,5 @@
 + [SözlükUygulaması](https://github.com/yasinozmeen/LearningSwift/tree/main/SozlukUygulaması) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/SozlukUygulaması/readMe.md)
 + [NotUygulaması](https://github.com/yasinozmeen/LearningSwift/blob/main/notUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/notUygulamasi/readMe.md)
 + [FilmUygulaması](https://github.com/yasinozmeen/LearningSwift/blob/main/FilmUygulaması) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/FilmUygulaması/readMe.md)
++ [IleriiOSGenelUygulama](https://github.com/yasinozmeen/LearningSwift/blob/main/IleriiOSGenelUygulama) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/IleriiOSGenelUygulama/readMe.md)
+
