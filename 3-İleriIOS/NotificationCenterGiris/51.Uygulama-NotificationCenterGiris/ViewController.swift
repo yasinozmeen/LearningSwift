@@ -4,7 +4,6 @@ extension Notification.Name{
     static let bilridimAdi = Notification.Name("benimYayin")
 }
 
-
 class ViewController: UIViewController {
     @IBOutlet var label: UILabel!
     
