@@ -13,6 +13,10 @@
 		84B95F30289D72A2000B34DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B95F2E289D72A2000B34DB /* Main.storyboard */; };
 		84B95F32289D72A4000B34DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B95F31289D72A4000B34DB /* Assets.xcassets */; };
 		84B95F35289D72A4000B34DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B95F33289D72A4000B34DB /* LaunchScreen.storyboard */; };
+		84D68EAB289E82E0002EA235 /* KelimeDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D68EAA289E82E0002EA235 /* KelimeDetayViewController.swift */; };
+		84D68EAD289E8336002EA235 /* KelimeHucreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D68EAC289E8336002EA235 /* KelimeHucreTableViewCell.swift */; };
+		84D68EAF289E834D002EA235 /* Kelimeler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D68EAE289E834D002EA235 /* Kelimeler.swift */; };
+		84D68EB1289E8356002EA235 /* SozlukCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D68EB0289E8356002EA235 /* SozlukCevap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		84B95F31289D72A4000B34DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B95F34289D72A4000B34DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84B95F36289D72A4000B34DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D68EAA289E82E0002EA235 /* KelimeDetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelimeDetayViewController.swift; sourceTree = "<group>"; };
+		84D68EAC289E8336002EA235 /* KelimeHucreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KelimeHucreTableViewCell.swift; sourceTree = "<group>"; };
+		84D68EAE289E834D002EA235 /* Kelimeler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kelimeler.swift; sourceTree = "<group>"; };
+		84D68EB0289E8356002EA235 /* SozlukCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SozlukCevap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				84B95F2A289D72A2000B34DB /* SceneDelegate.swift */,
 				84B95F2C289D72A2000B34DB /* ViewController.swift */,
 				84B95F2E289D72A2000B34DB /* Main.storyboard */,
+				84D68EAC289E8336002EA235 /* KelimeHucreTableViewCell.swift */,
+				84D68EAE289E834D002EA235 /* Kelimeler.swift */,
+				84D68EB0289E8356002EA235 /* SozlukCevap.swift */,
+				84D68EAA289E82E0002EA235 /* KelimeDetayViewController.swift */,
 				84B95F31289D72A4000B34DB /* Assets.xcassets */,
 				84B95F33289D72A4000B34DB /* LaunchScreen.storyboard */,
 				84B95F36289D72A4000B34DB /* Info.plist */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D68EAF289E834D002EA235 /* Kelimeler.swift in Sources */,
 				84B95F2D289D72A2000B34DB /* ViewController.swift in Sources */,
+				84D68EAD289E8336002EA235 /* KelimeHucreTableViewCell.swift in Sources */,
 				84B95F29289D72A2000B34DB /* AppDelegate.swift in Sources */,
+				84D68EB1289E8356002EA235 /* SozlukCevap.swift in Sources */,
 				84B95F2B289D72A2000B34DB /* SceneDelegate.swift in Sources */,
+				84D68EAB289E82E0002EA235 /* KelimeDetayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
