@@ -20,7 +20,8 @@
 	- [CoreData](https://github.com/yasinozmeen/LearningSwift/tree/main/2-Depolamaİşlemleri/√ToDoFilm) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/2-Depolamaİşlemleri/√ToDoFilm/ReadMe.md)
 	- [FileIslemleri](https://github.com/yasinozmeen/LearningSwift/blob/main/2-Depolamaİşlemleri/√FileIslemleri) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/2-Depolamaİşlemleri/√FileIslemleri/44ReadMe.md)
 	- [UserDefaultLoginEkrani](https://github.com/yasinozmeen/LearningSwift/blob/main/2-Depolamaİşlemleri/√LoginEkraniUserDefault) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/2-Depolamaİşlemleri/√LoginEkraniUserDefault/43readMe.md)
-3. [IleriiOS](https://github.com/yasinozmeen/LearningSwift/blob/main/3-İleriIOS)
+3. [İleri iOS](https://github.com/yasinozmeen/LearningSwift/blob/main/3-İleriIOS)
 	- [İleriiOSGenelUygulama](https://github.com/yasinozmeen/LearningSwift/blob/main/3-İleriIOS/IleriiOSGenelUygulama) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/3-İleriIOS/IleriiOSGenelUygulama/readMe.md)
 	- [NotificationCenter](https://github.com/yasinozmeen/LearningSwift/blob/main/3-İleriIOS/NotificationCenterGiris) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/3-İleriIOS/NotificationCenterGiris/README.md)
-
+4. [İnternet Tabanlı İşlemler](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler)
+	- [URLSessionSozlukUygulamasi](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/URLSessionSozlukUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/URLSessionSozlukUygulamasi/README.md)
