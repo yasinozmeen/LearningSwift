@@ -25,3 +25,5 @@
 	- [NotificationCenter](https://github.com/yasinozmeen/LearningSwift/blob/main/3-İleriIOS/NotificationCenterGiris) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/3-İleriIOS/NotificationCenterGiris/README.md)
 4. [İnternet Tabanlı İşlemler](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler)
 	- [URLSessionSozlukUygulamasi](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/URLSessionSozlukUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/URLSessionSozlukUygulamasi/README.md)
+	- [URLSessionNotlarUygulamasi](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/URLSessionNotlarUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/URLSessionNotlarUygulamasi/README.md)
+
