@@ -99,22 +99,19 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tarih" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mET-tL-mYx">
-                                                    <rect key="frame" x="56" y="11" width="38" height="21"/>
+                                                    <rect key="frame" x="56" y="11" width="37" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlS-D0-Y3Q">
-                                                    <rect key="frame" x="186" y="11" width="21" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="21" id="cVe-EU-cxE"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="196.5" y="11.5" width="21" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFb-Ip-p0R">
-                                                    <rect key="frame" x="312" y="11" width="29" height="21"/>
+                                                    <rect key="frame" x="312" y="11.5" width="29" height="20.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="29" id="fpe-50-G27"/>
                                                     </constraints>
@@ -125,15 +122,12 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="mET-tL-mYx" firstAttribute="leading" secondItem="O3D-5t-1m0" secondAttribute="leadingMargin" constant="36" id="0v9-Jo-9GZ"/>
+                                                <constraint firstItem="qlS-D0-Y3Q" firstAttribute="centerX" secondItem="O3D-5t-1m0" secondAttribute="centerX" id="BcG-Rk-poZ"/>
                                                 <constraint firstItem="SFb-Ip-p0R" firstAttribute="centerY" secondItem="O3D-5t-1m0" secondAttribute="centerY" id="K25-am-UNy"/>
                                                 <constraint firstItem="qlS-D0-Y3Q" firstAttribute="centerY" secondItem="O3D-5t-1m0" secondAttribute="centerY" id="RM1-sI-u37"/>
-                                                <constraint firstItem="qlS-D0-Y3Q" firstAttribute="leading" secondItem="mET-tL-mYx" secondAttribute="trailing" constant="92" id="SLd-MU-DWD"/>
                                                 <constraint firstItem="mET-tL-mYx" firstAttribute="centerY" secondItem="O3D-5t-1m0" secondAttribute="centerY" id="SWw-zV-RNM"/>
-                                                <constraint firstItem="SFb-Ip-p0R" firstAttribute="leading" secondItem="qlS-D0-Y3Q" secondAttribute="trailing" constant="105" id="dAN-ba-eNi"/>
                                                 <constraint firstItem="mET-tL-mYx" firstAttribute="bottom" secondItem="O3D-5t-1m0" secondAttribute="bottomMargin" id="fBH-qb-tpq"/>
-                                                <constraint firstItem="qlS-D0-Y3Q" firstAttribute="baseline" secondItem="SFb-Ip-p0R" secondAttribute="baseline" id="ina-eS-VFJ"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="SFb-Ip-p0R" secondAttribute="trailing" constant="53" id="t58-Xo-v0S"/>
-                                                <constraint firstItem="mET-tL-mYx" firstAttribute="baseline" secondItem="qlS-D0-Y3Q" secondAttribute="baseline" id="udh-Py-Vvk"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

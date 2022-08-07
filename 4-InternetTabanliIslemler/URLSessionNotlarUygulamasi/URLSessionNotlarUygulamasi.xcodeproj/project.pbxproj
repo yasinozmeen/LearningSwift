@@ -17,6 +17,7 @@
 		84B2F28F28A0111E00434A5F /* NotEkleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B2F28E28A0111E00434A5F /* NotEkleViewController.swift */; };
 		84B2F29128A0112A00434A5F /* NotDetayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B2F29028A0112A00434A5F /* NotDetayViewController.swift */; };
 		84B2F29328A0113C00434A5F /* Notlar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B2F29228A0113C00434A5F /* Notlar.swift */; };
+		84B2F29528A01B9300434A5F /* NotlarCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B2F29428A01B9300434A5F /* NotlarCevap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		84B2F28E28A0111E00434A5F /* NotEkleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEkleViewController.swift; sourceTree = "<group>"; };
 		84B2F29028A0112A00434A5F /* NotDetayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotDetayViewController.swift; sourceTree = "<group>"; };
 		84B2F29228A0113C00434A5F /* Notlar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notlar.swift; sourceTree = "<group>"; };
+		84B2F29428A01B9300434A5F /* NotlarCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotlarCevap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				84B2F28E28A0111E00434A5F /* NotEkleViewController.swift */,
 				84B2F29028A0112A00434A5F /* NotDetayViewController.swift */,
 				84B2F29228A0113C00434A5F /* Notlar.swift */,
+				84B2F29428A01B9300434A5F /* NotlarCevap.swift */,
 				84B2F28128A0109700434A5F /* Assets.xcassets */,
 				84B2F28328A0109700434A5F /* LaunchScreen.storyboard */,
 				84B2F28628A0109700434A5F /* Info.plist */,
@@ -153,6 +156,7 @@
 				84B2F27D28A0109500434A5F /* ViewController.swift in Sources */,
 				84B2F29328A0113C00434A5F /* Notlar.swift in Sources */,
 				84B2F28F28A0111E00434A5F /* NotEkleViewController.swift in Sources */,
+				84B2F29528A01B9300434A5F /* NotlarCevap.swift in Sources */,
 				84B2F28D28A0110F00434A5F /* NotHucreTableViewCell.swift in Sources */,
 				84B2F27928A0109500434A5F /* AppDelegate.swift in Sources */,
 				84B2F29128A0112A00434A5F /* NotDetayViewController.swift in Sources */,

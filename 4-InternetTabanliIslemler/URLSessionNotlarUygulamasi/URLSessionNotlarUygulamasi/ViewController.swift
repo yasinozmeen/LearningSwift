@@ -10,21 +10,69 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let n1 = Notlar(not_id: 1, ders_adi: "Tarih", not1: 30, not2: 50)
-        let n2 = Notlar(not_id: 2, ders_adi: "Fizik", not1: 50, not2: 20)
-        
-        notlarListe.append(n1)
-        notlarListe.append(n2)
-        
         notTableView.delegate = self
         notTableView.dataSource = self
         
+        tumNotlarAl()
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        tumNotlarAl()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if segue.identifier == "toNotDetay" {
+            let indeks = sender as? Int
+            
+            let gidilecekVC = segue.destination as! NotDetayViewController
+            
+            gidilecekVC.not = notlarListe[indeks!]
+            
+        }
     }
 
+    func tumNotlarAl(){
+        let url = URL(string: "http://kasimadalan.pe.hu/notlar/tum_notlar.php")!
+        
+        URLSession.shared.dataTask(with: url) { data,response,error in
+            if error != nil || data == nil {
+                print("Hata")
+                return
+            }
+            
+            do{
+                let cevap = try JSONDecoder().decode(NotlarCevap.self, from: data!)
+                
+                if let gelenNotListesi = cevap.notlar {
+                    self.notlarListe = gelenNotListesi
+                }else{
+                    self.notlarListe = [Notlar]()
+                }
+                
+                DispatchQueue.main.async {
+                    
+                    var toplam = 0
+                    for n in self.notlarListe {
+
+                        if let n1 = Int(n.not1!),let n2 = Int(n.not2!) {
+                             toplam = toplam + (n1+n2)/2
+                        }
+
+                    }
+
+                    if self.notlarListe.count != 0 {
+                        self.navigationItem.prompt = "Ortalama : \(toplam / self.notlarListe.count)"
+                    }else{
+                        self.navigationItem.prompt = "Ortalama : YOK"
+                    }
+
+                    self.notTableView.reloadData()
+                }
+            }catch{
+                print(error.localizedDescription)
+            }
+        }.resume()
+    }
 
 }
 
