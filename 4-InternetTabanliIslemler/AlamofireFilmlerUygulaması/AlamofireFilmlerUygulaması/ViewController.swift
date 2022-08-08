@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController {
 
@@ -17,14 +18,33 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        let k1 = Kategoriler(kategori_id: 1, kategori_ad: "Dram")
-        let k2 = Kategoriler(kategori_id: 2, kategori_ad: "Bilim Kurgu")
-        kategorilerListe.append(k1)
-        kategorilerListe.append(k2)
-        
         kategoriTableView.delegate = self
         kategoriTableView.dataSource = self
         
+        tumKategorilerAl()
+        
+    }
+    func tumKategorilerAl(){
+        AF.request("http://kasimadalan.pe.hu/filmler/tum_kategoriler.php", method: .get).response { response in
+            if let data = response.data{
+                do{
+                    let cevap = try JSONDecoder().decode(KategoriCevap.self, from: data)
+                    if let gelenKategoriListe = cevap.kategoriler{
+                        self.kategorilerListe = gelenKategoriListe
+                    }
+                    DispatchQueue.main.async {
+                        self.kategoriTableView.reloadData()
+                    }
+                }catch{
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let gidilecekVC = segue.destination as! FilmViewController
+        let indeks = sender as! Int
+        gidilecekVC.kategori = self.kategorilerListe[indeks]
     }
 
 

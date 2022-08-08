@@ -1,5 +1,6 @@
 
 import UIKit
+import Alamofire
 
 class FilmViewController: UIViewController {
     @IBOutlet weak var filmCollectionView: UICollectionView!
@@ -7,20 +8,15 @@ class FilmViewController: UIViewController {
     
     var filmListesi = [Filmler]()
     
+    var kategori:Kategoriler?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let f1 = Filmler(film_id: 1, film_ad: "Django", film_yil: 2012, film_resim: "django", kategori: Kategoriler(), yonetmen: Yonetmenler())
-        
-        let f2 = Filmler(film_id: 1, film_ad: "Inception", film_yil: 2012, film_resim: "inception", kategori: Kategoriler(), yonetmen: Yonetmenler())
-        
-        filmListesi.append(f1)
-        filmListesi.append(f2)
-        
         filmCollectionView.delegate = self
         filmCollectionView.dataSource = self
         
-        
+    
         let tasarim :UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         
         let genislik = self.filmCollectionView.frame.size.width
@@ -36,8 +32,44 @@ class FilmViewController: UIViewController {
         
         filmCollectionView.collectionViewLayout = tasarim
         
+        if let k = kategori{
+            
+            if let kid = Int(k.kategori_id!){
+                navigationItem.title = k.kategori_ad!
+                filmlerByKategoriId(kategori_id: kid)
+            
+            }
+        }
     }
- 
+    func filmlerByKategoriId(kategori_id:Int){
+        
+        let paremetreler:Parameters  = ["kategori_id":kategori_id]
+        AF.request("http://kasimadalan.pe.hu/filmler/filmler_by_kategori_id.php", method: .post,parameters: paremetreler).response { response in
+           
+            if let data = response.data{
+             
+                do{
+                    let cevap = try JSONDecoder().decode(FilmCevap.self, from: data)
+                    
+                    if let gelenFilmListe = cevap.filmler{
+                       
+                        self.filmListesi = gelenFilmListe
+                       
+                    }
+                    DispatchQueue.main.async {
+                    
+                        self.filmCollectionView.reloadData()
+                    }
+                }catch{
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let GVC = segue.destination as! FilmDetayViewController
+        GVC.film = filmListesi[sender as! Int]
+    }
     
     
 }
@@ -64,7 +96,16 @@ extension FilmViewController:UICollectionViewDelegate,UICollectionViewDataSource
         
         cell.labelFilmAdi.text = film.film_ad
         cell.labelFilmFiyat.text = "14.99 TL"
-        cell.imageViewFilmResim.image = UIImage(named: film.film_resim!)
+        
+        if let url = URL(string: "http://kasimadalan.pe.hu/filmler/resimler/\(film.film_resim!)"){
+            DispatchQueue.global().async {
+                let data = try? Data(contentsOf: url)
+                
+                DispatchQueue.main.async {
+                    cell.imageViewFilmResim.image = UIImage(data: data!)
+                }
+            }
+        }
         
         cell.layer.borderColor = UIColor.lightGray.cgColor
         cell.layer.borderWidth = 0.5

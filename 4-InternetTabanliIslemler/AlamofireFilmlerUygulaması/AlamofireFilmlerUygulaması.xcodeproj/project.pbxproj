@@ -20,6 +20,9 @@
 		845B402328A1509200510A81 /* Kategoriler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B402228A1509200510A81 /* Kategoriler.swift */; };
 		845B402528A150A900510A81 /* Yonetmenler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B402428A150A900510A81 /* Yonetmenler.swift */; };
 		845B402728A150B600510A81 /* Filmler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B402628A150B600510A81 /* Filmler.swift */; };
+		845B402928A17EA400510A81 /* FilmCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B402828A17EA400510A81 /* FilmCevap.swift */; };
+		845B402B28A17EAD00510A81 /* KategoriCevap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845B402A28A17EAD00510A81 /* KategoriCevap.swift */; };
+		845B402E28A1803F00510A81 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 845B402D28A1803F00510A81 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,8 @@
 		845B402228A1509200510A81 /* Kategoriler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kategoriler.swift; sourceTree = "<group>"; };
 		845B402428A150A900510A81 /* Yonetmenler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yonetmenler.swift; sourceTree = "<group>"; };
 		845B402628A150B600510A81 /* Filmler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filmler.swift; sourceTree = "<group>"; };
+		845B402828A17EA400510A81 /* FilmCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCevap.swift; sourceTree = "<group>"; };
+		845B402A28A17EAD00510A81 /* KategoriCevap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriCevap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				845B402E28A1803F00510A81 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,14 +79,16 @@
 				845B400628A14B9500510A81 /* AppDelegate.swift */,
 				845B400828A14B9500510A81 /* SceneDelegate.swift */,
 				845B400A28A14B9500510A81 /* ViewController.swift */,
-				845B400C28A14B9500510A81 /* Main.storyboard */,
-				845B401C28A14DB300510A81 /* FilmDetayViewController.swift */,
-				845B401A28A14D9300510A81 /* FilmViewController.swift */,
 				845B401E28A1505900510A81 /* KatagoriHucreTableViewCell.swift */,
+				845B400C28A14B9500510A81 /* Main.storyboard */,
+				845B401A28A14D9300510A81 /* FilmViewController.swift */,
+				845B401C28A14DB300510A81 /* FilmDetayViewController.swift */,
 				845B402028A1508200510A81 /* FilmHucreCollectionViewCell.swift */,
 				845B402228A1509200510A81 /* Kategoriler.swift */,
 				845B402428A150A900510A81 /* Yonetmenler.swift */,
 				845B402628A150B600510A81 /* Filmler.swift */,
+				845B402828A17EA400510A81 /* FilmCevap.swift */,
+				845B402A28A17EAD00510A81 /* KategoriCevap.swift */,
 				845B400F28A14B9800510A81 /* Assets.xcassets */,
 				845B401128A14B9800510A81 /* LaunchScreen.storyboard */,
 				845B401428A14B9800510A81 /* Info.plist */,
@@ -104,6 +112,9 @@
 			dependencies = (
 			);
 			name = "AlamofireFilmlerUygulaması";
+			packageProductDependencies = (
+				845B402D28A1803F00510A81 /* Alamofire */,
+			);
 			productName = "AlamofireFilmlerUygulaması";
 			productReference = 845B400328A14B9500510A81 /* AlamofireFilmlerUygulaması.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +143,9 @@
 				Base,
 			);
 			mainGroup = 845B3FFA28A14B9500510A81;
+			packageReferences = (
+				845B402C28A1803F00510A81 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 845B400428A14B9500510A81 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -166,9 +180,11 @@
 				845B400728A14B9500510A81 /* AppDelegate.swift in Sources */,
 				845B401F28A1505900510A81 /* KatagoriHucreTableViewCell.swift in Sources */,
 				845B401B28A14D9300510A81 /* FilmViewController.swift in Sources */,
+				845B402B28A17EAD00510A81 /* KategoriCevap.swift in Sources */,
 				845B401D28A14DB300510A81 /* FilmDetayViewController.swift in Sources */,
 				845B402128A1508200510A81 /* FilmHucreCollectionViewCell.swift in Sources */,
 				845B400928A14B9500510A81 /* SceneDelegate.swift in Sources */,
+				845B402928A17EA400510A81 /* FilmCevap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +402,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		845B402C28A1803F00510A81 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		845B402D28A1803F00510A81 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 845B402C28A1803F00510A81 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 845B3FFB28A14B9500510A81 /* Project object */;
 }
