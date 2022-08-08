@@ -26,4 +26,5 @@
 4. [İnternet Tabanlı İşlemler](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler)
 	- [URLSessionSozlukUygulamasi](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/URLSessionSozlukUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/URLSessionSozlukUygulamasi/README.md)
 	- [URLSessionNotlarUygulamasi](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/URLSessionNotlarUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/URLSessionNotlarUygulamasi/README.md)
+	- [AlamofireFilmlerUygulamasi](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/AlamofireFilmlerUygulaması) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/AlamofireFilmlerUygulaması/README.md)
 
