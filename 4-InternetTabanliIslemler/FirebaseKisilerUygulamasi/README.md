@@ -1,5 +1,4 @@
-# URLSessionNotlarUygulamasi
+# FirebaseKisilerUygulamasi
+Bu uygulamada Firebase kurmayı veri çekmeyi, silmeyi, güncellemeyi öğrendim.
 
-Bu uygulamada URLSession ile bir webservice'de kayıtlı verileri çekip, yeni veri ekleyip, var olan veriyi güncelleyip, silmeyi yaptım. 
-
-![Simulator Screen Recording - iPhone SE (3rd generation) - 2022-08-07 at 21 13 18](https://user-images.githubusercontent.com/54503469/183305122-2d936e35-e77f-46e9-8bb2-d3f2f8b85889.gif)
+![Simulator Screen Recording - iPhone 13 mini - 2022-08-09 at 17 29 21](https://user-images.githubusercontent.com/54503469/183676837-bcc8472e-99f8-4df8-91dd-1da6ed216b90.gif)
