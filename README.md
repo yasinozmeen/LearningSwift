@@ -28,4 +28,6 @@
 	- [URLSessionNotlarUygulamasi](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/URLSessionNotlarUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/URLSessionNotlarUygulamasi/README.md)
 	- [AlamofireFilmlerUygulamasi](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/AlamofireFilmlerUygulaması) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/AlamofireFilmlerUygulaması/README.md)
 	- [FirebaseKisilerUygulamasi](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/FirebaseKisilerUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/4-InternetTabanliIslemler/FirebaseKisilerUygulamasi/README.md)
-
+4. [UygulamaMimarileri](https://github.com/yasinozmeen/LearningSwift/blob/main/5-UygulamaMimarileri)
+	- [ViperEgzersiz](https://github.com/yasinozmeen/LearningSwift/blob/main/5-UygulamaMimarileri/ViperEgzersiz) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/5-UygulamaMimarileri/ViperEgzersiz/readme.md)
+	
