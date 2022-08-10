@@ -73,13 +73,7 @@
                             <constraint firstItem="VCn-7D-s5c" firstAttribute="centerY" secondItem="j8H-4k-FQf" secondAttribute="centerY" id="ym1-ZR-Nds"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Hesapla" id="Zav-XG-fjm">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="folder" catalog="system" id="503-5X-apA">
-                            <connections>
-                                <action selector="arsivButton:" destination="BYZ-38-t0r" id="K5e-ny-Sew"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Hesapla" id="Zav-XG-fjm"/>
                     <connections>
                         <outlet property="islemSegmented" destination="VCn-7D-s5c" id="lWN-Qd-Oc9"/>
                         <outlet property="sayi1TextField" destination="j8H-4k-FQf" id="87U-uy-Q1u"/>
@@ -111,7 +105,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="folder" catalog="system" width="128" height="97"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

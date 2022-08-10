@@ -7,8 +7,20 @@
 
 import Foundation
 
-class router{
-    
-    
+protocol PresenterToRouterProtocol{
+    static func createModule(ref : ViewController)
+}
+
+
+class router : PresenterToRouterProtocol{
+    static func createModule(ref: ViewController) {
+        let presenter = Presenter()
+        ref.presenterNesnesi = presenter
+        ref.presenterNesnesi?.interactor = Interactor()
+        ref.presenterNesnesi?.view = ref
+        
+        ref.presenterNesnesi?.interactor?.presenter = presenter
+        
+    }
 }
 
