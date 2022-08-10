@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M61-BT-JIb">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hesapla-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViperEgzersiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sayı1" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j8H-4k-FQf">
+                                <rect key="frame" x="60.333333333333343" y="286.66666666666669" width="61.666666666666657" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="61.670000000000002" id="gEZ-7X-wmA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sayı2" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgw-rh-PiB">
+                                <rect key="frame" x="253.00000000000003" y="286.66666666666669" width="63.333333333333343" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63.329999999999998" id="NQ0-Ov-vfW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="VCn-7D-s5c">
+                                <rect key="frame" x="132" y="288" width="111" height="32"/>
+                                <segments>
+                                    <segment title="+"/>
+                                    <segment title="-"/>
+                                    <segment title="*"/>
+                                    <segment title="/"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sayıları girip hesaplayınız." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNA-BI-Wjv">
+                                <rect key="frame" x="72.666666666666686" y="177" width="230" height="95.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5M-dl-K4O">
+                                <rect key="frame" x="149.33333333333334" y="336" width="76.333333333333343" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Hesapla"/>
+                                <connections>
+                                    <action selector="hesaplaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ft2-Ie-IA1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dgw-rh-PiB" firstAttribute="leading" secondItem="VCn-7D-s5c" secondAttribute="trailing" constant="10" id="272-fg-14q"/>
+                            <constraint firstItem="VCn-7D-s5c" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="52j-PI-JNX"/>
+                            <constraint firstItem="SNA-BI-Wjv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OB7-q9-6f9"/>
+                            <constraint firstItem="SNA-BI-Wjv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="P67-jL-bGi"/>
+                            <constraint firstItem="s5M-dl-K4O" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eAp-nx-Ukf"/>
+                            <constraint firstItem="VCn-7D-s5c" firstAttribute="leading" secondItem="j8H-4k-FQf" secondAttribute="trailing" constant="10" id="hhn-9P-LQW"/>
+                            <constraint firstItem="s5M-dl-K4O" firstAttribute="top" secondItem="VCn-7D-s5c" secondAttribute="bottom" constant="17" id="npo-8I-496"/>
+                            <constraint firstItem="SNA-BI-Wjv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ohS-Zw-Rmt"/>
+                            <constraint firstItem="dgw-rh-PiB" firstAttribute="centerY" secondItem="j8H-4k-FQf" secondAttribute="centerY" id="p1a-OJ-Ik1"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="SNA-BI-Wjv" secondAttribute="trailing" id="tFX-CK-BPT"/>
+                            <constraint firstItem="VCn-7D-s5c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="x5P-rr-Xya"/>
+                            <constraint firstItem="VCn-7D-s5c" firstAttribute="centerY" secondItem="j8H-4k-FQf" secondAttribute="centerY" id="ym1-ZR-Nds"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hesapla" id="Zav-XG-fjm">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="folder" catalog="system" id="503-5X-apA">
+                            <connections>
+                                <action selector="arsivButton:" destination="BYZ-38-t0r" id="K5e-ny-Sew"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="islemSegmented" destination="VCn-7D-s5c" id="lWN-Qd-Oc9"/>
+                        <outlet property="sayi1TextField" destination="j8H-4k-FQf" id="87U-uy-Q1u"/>
+                        <outlet property="sayi2TextField" destination="dgw-rh-PiB" id="NlE-eQ-gkR"/>
+                        <outlet property="sonucLAbel" destination="SNA-BI-Wjv" id="GN7-am-SyB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="95"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VnL-1M-hZK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M61-BT-JIb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zk3-II-ldU">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tuY-tO-EwL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xYf-sV-5eW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.40000000000001" y="95.320197044334975"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="folder" catalog="system" width="128" height="97"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
