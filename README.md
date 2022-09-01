@@ -6,8 +6,6 @@
 
 ## 🗄 İçerik
 
-https://github.com/yasinozmeen/LearningSwift/blob/main/KasımAdalanSwiftKursu/1-Listelemeİşlemleri/√CollectionViewFilmUygulamasi/40README.md
-https://github.com/yasinozmeen/LearningSwift/tree/main/KasımAdalanSwiftKursu/1-Listelemeİşlemleri/√CollectionViewFilmUygulamasi
 
 1. [Listeleme İşlemleri](https://github.com/yasinozmeen/LearningSwift/tree/main/KasımAdalanSwiftKursu/1-Listelemeİşlemleri)
 	- [CollectionViewFilmUygulaması](https://github.com/yasinozmeen/LearningSwift/blob/main/KasımAdalanSwiftKursu/1-Listelemeİşlemleri/√CollectionViewFilmUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/KasımAdalanSwiftKursu/1-Listelemeİşlemleri/√CollectionViewFilmUygulamasi/40README.md)
