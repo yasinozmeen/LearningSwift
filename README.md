@@ -6,7 +6,7 @@
 
 ## 🗄 İçerik
 
-* Kasım Adalan Swift Eğitimi	
+- Kasım Adalan Swift Eğitimi	
 	1. [Listeleme İşlemleri](https://github.com/yasinozmeen/LearningSwift/tree/main/KasımAdalanSwiftKursu/1-Listelemeİşlemleri)
 	    - [CollectionViewFilmUygulaması](https://github.com/yasinozmeen/LearningSwift/blob/main/KasımAdalanSwiftKursu/1-Listelemeİşlemleri/√CollectionViewFilmUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/KasımAdalanSwiftKursu/1-Listelemeİşlemleri/√CollectionViewFilmUygulamasi/40README.md)
 	    - [SearchBarAndTableView](https://github.com/yasinozmeen/LearningSwift/blob/main/KasımAdalanSwiftKursu/1-Listelemeİşlemleri/√SearchBarANDTableView) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/KasımAdalanSwiftKursu/1-Listelemeİşlemleri/√SearchBarANDTableView/41readME.md)
@@ -31,5 +31,6 @@
 	    - [FirebaseKisilerUygulamasi](https://github.com/yasinozmeen/LearningSwift/blob/main/KasımAdalanSwiftKursu/4-InternetTabanliIslemler/FirebaseKisilerUygulamasi) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/KasımAdalanSwiftKursu/4-InternetTabanliIslemler/FirebaseKisilerUygulamasi/README.md)
 	4. [UygulamaMimarileri](https://github.com/yasinozmeen/LearningSwift/blob/main/KasımAdalanSwiftKursu/5-UygulamaMimarileri)
 	    - [ViperEgzersiz](https://github.com/yasinozmeen/LearningSwift/blob/main/KasımAdalanSwiftKursu/5-UygulamaMimarileri/ViperEgzersiz) -> [ReadMe](https://github.com/yasinozmeen/LearningSwift/blob/main/KasımAdalanSwiftKursu/5-UygulamaMimarileri/ViperEgzersiz/readme.md)
-* Angela Yu Swift Eğitimi
+- Angela Yu Swift Eğitimi
 	1. [EggTimer](https://github.com/yasinozmeen/LearningSwift/tree/main/Angela%20Yu/EggTimer-iOS13-master)
+	2. [Quizzler MVC](https://github.com/yasinozmeen/LearningSwift/tree/main/Angela%20Yu/Quizzler-MVC)
