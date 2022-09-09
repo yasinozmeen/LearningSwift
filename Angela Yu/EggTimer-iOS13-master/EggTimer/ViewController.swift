@@ -12,6 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
     @IBOutlet var ttile: UILabel!
     @IBOutlet var progressBar: UIProgressView!
+    
     let eggTimes = ["Soft":3,"Medium":5,"Hard":7]
     var timer = Timer()
     var player: AVAudioPlayer!
