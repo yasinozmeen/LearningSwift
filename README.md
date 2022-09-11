@@ -34,3 +34,7 @@
 - Angela Yu Swift Eğitimi
 	1. [EggTimer](https://github.com/yasinozmeen/LearningSwift/tree/main/Angela%20Yu/EggTimer-iOS13-master)
 	2. [Quizzler MVC](https://github.com/yasinozmeen/LearningSwift/tree/main/Angela%20Yu/Quizzler-MVC)
+	3. [Tipsy](https://github.com/yasinozmeen/LearningSwift/tree/main/Angela%20Yu/Tipsy-MVC-AutoLayout)
+	4. [DestiniApp](https://github.com/yasinozmeen/LearningSwift/tree/main/Angela%20Yu/Destini-MVC-AutoLayout)
+	5. [Clima](https://github.com/yasinozmeen/LearningSwift/tree/main/Angela%20Yu/Clima-iOS13-MVC-Networking)
+	6. [BMI Calculator](https://github.com/yasinozmeen/LearningSwift/tree/main/Angela%20Yu/BMI-Calculator)
