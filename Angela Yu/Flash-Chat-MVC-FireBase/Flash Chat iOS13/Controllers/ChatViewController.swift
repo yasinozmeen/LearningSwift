@@ -36,13 +36,12 @@ class ChatViewController: UIViewController {
     }
     
     func loadMessages(){
+        messages = []
         
-        
-        db.collection(K.FStore.collectionName).order(by: K.FStore.dateField).addSnapshotListener { querySnapshot, error in
+        db.collection(K.FStore.collectionName).order(by: K.FStore.dateField).getDocuments { querySnapshot, error in
             if let e = error{
                 print("error when get decument",e)
             }else{
-                self.messages = []
                 if let snapshotDocument = querySnapshot?.documents{
                     for doc in snapshotDocument{
                         let data = doc.data()
@@ -50,10 +49,7 @@ class ChatViewController: UIViewController {
                             let newMessage = Message(sender: messageSender, body: messageBody)
                             self.messages.append(newMessage)
                             DispatchQueue.main.async {
-                                
                                 self.tableView.reloadData()
-                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
-                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
                             }
                         }
                         
@@ -65,7 +61,8 @@ class ChatViewController: UIViewController {
     func sendMessage(){
         if let messageBody = messageTextfield.text, let sender = Auth.auth().currentUser?.email{
             if !messageBody.isEmpty{
-                var _:DocumentReference?  = db.collection(K.FStore.collectionName).addDocument(data: [
+                var ref:DocumentReference?
+                ref = db.collection(K.FStore.collectionName).addDocument(data: [
                     K.FStore.bodyField : messageBody,
                     K.FStore.senderField : sender,
                     K.FStore.dateField : Date().timeIntervalSince1970
@@ -73,9 +70,7 @@ class ChatViewController: UIViewController {
                     if let e = err{
                         print("error when adding the document: \(e.localizedDescription)")
                     }else{
-                        DispatchQueue.main.async {
-                            self.messageTextfield.text = ""
-                        }
+                        self.messageTextfield.text = ""
                         //print("succesfly save data, docId:",ref!.documentID)
                     }
                 })
@@ -107,22 +102,8 @@ extension ChatViewController: UITableViewDelegate, UITableViewDataSource,UITextF
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let message = messages[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
-        cell.label.text = message.body
-        
-        if message.sender == Auth.auth().currentUser?.email{
-            cell.leftImageView.isHidden = true
-            cell.rightImageView.isHidden = false
-            cell.messageBuble.backgroundColor = UIColor(named: K.BrandColors.lightPurple)
-            cell.label.textColor = UIColor(named: K.BrandColors.purple)
-        }else{
-            cell.leftImageView.isHidden = false
-            cell.rightImageView.isHidden = true
-            cell.messageBuble.backgroundColor = UIColor(named: K.BrandColors.lighBlue)
-            cell.label.textColor = UIColor(named: K.BrandColors.blue)
-        }
-        
+        cell.label.text = messages[indexPath.row].body
         return cell
     }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
