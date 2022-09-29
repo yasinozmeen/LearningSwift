@@ -1,31 +1,23 @@
-//
-//  ViewController.swift
-//  Todoey
-//
-//  Created by Philipp Muellauer on 02/12/2019.
-//  Copyright © 2019 App Brewery. All rights reserved.
-//
+// CoreData ile veri kaydetme
 
 import UIKit
+import CoreData
 
 class TodoeyViewController: UITableViewController {
     //MARK: - Variables
-    var itemArray: [Items] = []
-    let defaults = UserDefaults.standard
     
     
-    
+    var itemArray = [Item]()
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     //MARK: - Function
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadItems()
         
-        if let items = defaults.object(forKey: "ToDoListArray") as? [Items]{
-            itemArray = items
-        }
     }
     
-    //MARK: - TableView DataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return itemArray.count
     }
@@ -33,21 +25,27 @@ class TodoeyViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoItemCell", for: indexPath)
         
-        cell.textLabel?.text = itemArray[indexPath.row].title
+        let item = itemArray[indexPath.row]
+        
+        cell.textLabel?.text = item.title
+        
+        cell.accessoryType = item.done ? .checkmark : .none
+        
         return cell
     }
-    //MARK: - TableView Delegate
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        itemArray[indexPath.row].done = !itemArray[indexPath.row].done
         
+        context.delete(itemArray[indexPath.row])
+        itemArray.remove(at: indexPath.row)
+        view.endEditing(true)
+        saveItems()
         tableView.deselectRow(at: indexPath, animated: true)
         
-        if tableView.cellForRow(at: indexPath)!.accessoryType == .none{
-            tableView.cellForRow(at: indexPath)!.accessoryType = .checkmark
-        }else{
-            tableView.cellForRow(at: indexPath)!.accessoryType = .none
-        }
     }
-    //MARK: - Add New Item
+    
+    /// AddNewItem
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         var textField = UITextField()
         // create alert
@@ -57,13 +55,11 @@ class TodoeyViewController: UITableViewController {
         let addAction = UIAlertAction(title: "Add Item", style: .default) { action in
             if let text = textField.text{
                 
-                var item = Items()
-                item.title = text
-                self.itemArray.append(item)
-                
-                self.defaults.set(self.itemArray, forKey: "ToDoListArray")
-                
-                self.tableView.reloadData()
+                let newItem = Item(context: self.context)
+                newItem.title = text
+                newItem.done = false
+                self.itemArray.append(newItem)
+                self.saveItems()
             }
             
         }
@@ -87,6 +83,48 @@ class TodoeyViewController: UITableViewController {
         
         // show alert
         present(alert, animated: true, completion: nil)
+        
     }
+    func saveItems(){
+        do{
+            try context.save()
+        }catch{
+            print(error.localizedDescription)
+        }
+        
+        self.tableView.reloadData()
+    }
+    func loadItems(with request: NSFetchRequest<Item> = Item.fetchRequest()){
+
+            do{
+                itemArray =  try context.fetch(request)
+            }catch{
+                print("eror fetching data::::",error.localizedDescription)
+            }
+        
+        
+        self.tableView.reloadData()
+    }
+    
+  
+    
+
 }
 
+extension TodoeyViewController: UISearchBarDelegate{
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        let request: NSFetchRequest<Item> = Item.fetchRequest()
+        request.predicate = NSPredicate(format: "title CONTAINS[cd] %@",searchBar.text!)
+        request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+        if searchBar.text == ""{
+            loadItems()
+        }else{
+            loadItems(with: request)
+        }
+    }
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        loadItems()
+        searchBar.text = ""
+        view.endEditing(true)
+    }
+}
