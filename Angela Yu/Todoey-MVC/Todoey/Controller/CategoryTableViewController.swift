@@ -31,56 +31,30 @@ class CategoryTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell", for: indexPath)
-        let category = categoryArray[indexPath.row]
         
-        cell.textLabel?.text = category.name
+        cell.textLabel?.text = categoryArray[indexPath.row].name
         
         return cell
     }
     
     
     //MARK: - TableView Delegate Methods
-    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "goToItems", sender: self)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! TodoeyViewController
+        
+        if let indexpath = tableView.indexPathForSelectedRow{
+            destinationVC.selectedCategory = categoryArray[indexpath.row]
+        }
+    }
     
     
     //MARK: - Data Manipulation Methods
     
-    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
-        var textField = UITextField()
-        
-        let alert = UIAlertController(title: "Add New Category", message: "", preferredStyle: .alert)
-        
-        let addAction = UIAlertAction(title: "Add", style: .default) { action in
-            if let text = textField.text{
-                if textField.text != "" {
-                    let newCategory = Category(context: self.context)
-                    newCategory.name = text
-                    self.categoryArray.append(newCategory)
-                    self.saveCategory()
-                }
-            }
-        }
-        addAction.setValue(UIColor.systemGreen, forKey: "titleTextColor")
-        
-        // create cancel button
-        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler:nil)
-        
-        // add buton text color changed to red
-        cancelAction.setValue(UIColor.red, forKey: "titleTextColor")
-        
-        // create textField in alert view
-        alert.addTextField { alertTextField in
-            textField.placeholder = "Create New Item"
-            textField = alertTextField
-        }
-        
-        alert.addAction(addAction)
-        alert.addAction(cancelAction)
-        
-        // show alert
-        present(alert, animated: true, completion: nil)
-        
-    }
+    
     func saveCategory(){
         do{
             try context.save()
@@ -91,14 +65,54 @@ class CategoryTableViewController: UITableViewController {
         self.tableView.reloadData()
     }
     func loadCategory(with request: NSFetchRequest<Category> = Category.fetchRequest()){
-            do{
-                categoryArray =  try context.fetch(request)
-            }catch{
-                print("eror fetching data::::",error.localizedDescription)
-            }
+        do{
+            categoryArray =  try context.fetch(request)
+        }catch{
+            print("eror fetching data::::",error.localizedDescription)
+        }
         self.tableView.reloadData()
+        
     }
+    //MARK: - Add New Category
     
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+            var textField = UITextField()
+            
+            let alert = UIAlertController(title: "Add New Category", message: "", preferredStyle: .alert)
+            
+            let addAction = UIAlertAction(title: "Add", style: .default) { action in
+                
+                if textField.text != "" {
+                    if let text = textField.text{
+                        let newCategory = Category(context: self.context)
+                        newCategory.name = text
+                        self.categoryArray.append(newCategory)
+                        self.saveCategory()
+                    }
+                }
+            }
+            addAction.setValue(UIColor.systemGreen, forKey: "titleTextColor")
+            
+            // create cancel button
+            let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler:nil)
+            
+            // add buton text color changed to red
+            cancelAction.setValue(UIColor.red, forKey: "titleTextColor")
+            
+            // create textField in alert view
+            alert.addTextField { alertTextField in
+                textField.placeholder = "Create New Item"
+                textField = alertTextField
+            }
+            
+            alert.addAction(addAction)
+            alert.addAction(cancelAction)
+            
+            // show alert
+            present(alert, animated: true, completion: nil)
+            
+        }
+
     
     
 }

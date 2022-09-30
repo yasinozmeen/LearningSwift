@@ -64,6 +64,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -113,7 +114,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="asA-q9-XNb" kind="show" id="sPD-SC-B3g"/>
+                        <segue destination="asA-q9-XNb" kind="show" identifier="goToItems" id="sPD-SC-B3g"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFL-PS-DGG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
